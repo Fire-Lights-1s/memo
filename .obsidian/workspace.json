@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "eb2c6a75cca022df",
+    "type": "split",
+    "children": [
+      {
+        "id": "63a59a0e9361eb8d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eafef02074ea705e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JSP/application 객체.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "83ee4a780b3050ad",
+    "type": "split",
+    "children": [
+      {
+        "id": "22c19dfff3933584",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "325447f39b6d31b4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a24dab81c9c1482b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0711ac1e129741fe",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "36be420d37f6a586",
+    "type": "split",
+    "children": [
+      {
+        "id": "239ad51462605a9c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03193ac3095cc3a0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "JSP/application 객체.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a0e37222c58bcecd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "JSP/application 객체.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f594941c9bbfc6aa",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e6b240a8f97336d8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "JSP/application 객체.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "eafef02074ea705e",
+  "lastOpenFiles": [
+    "JSP/MVC패턴.md",
+    "Cloud(AWS)/웹(web) 서버.md",
+    "Cloud(AWS)/원격 접속.md",
+    "Cloud(AWS)/버추얼 박스 가져오기 내보내기.md",
+    "Cloud(AWS)/리눅스 초기설정.md",
+    "Cloud(AWS)/리눅스 설치(버추얼 박스).md",
+    "JSP/내장 객체.md",
+    "JSP/pageContext 객체.md",
+    "JSP/Request & Response 객체.md",
+    "JSP/Session 객체.md",
+    "JSP/application 객체.md",
+    "JSP/out 객체.md",
+    "JSP/JSP 에 대해.md",
+    "JSP/웹 애플리케이션 구조.md",
+    "진수.md",
+    "네트워크(Network)/IP 주소(IPv4).md",
+    "JSP/아파치 톰캣에 파일 올리기.md",
+    "DataBase/정규화.md",
+    "DataBase/조인(join).md",
+    "Cloud(AWS)/web 서버 만들기 - TUI 환경.md",
+    "DataBase/HR 스키마 - ERD 만들기.md",
+    "DataBase/MySQL.md",
+    "DataBase/where절과 order by절.md",
+    "DataBase/데이터 조회(select).md",
+    "무제 파일.canvas",
+    "2024-06-03.md",
+    "Java/상수.md",
+    "네트워크(Network)",
+    "Cloud(AWS)",
+    "JSP",
+    "Java",
+    "DataBase"
+  ]
+}
