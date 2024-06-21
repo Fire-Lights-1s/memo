@@ -2,7 +2,7 @@
 - http가 요청하러 서버에 갈때 (태그정보,서버정보,사용자정보,세션정보,쿠키정보,http헤더정보)
 - 정보를 들고 서버에 전달 => 서버 request 내장객체(기억장소)에 저장
 - request에 다양한 정보가 있음
-```
+```jsp
 서버 이름 : <%=request.getServerName() %><br>
 서버 포트 : <%=request.getServerPort() %><br>
 요청 URL(요청 주소) :  <%=request.getRequestURL() %><br>
@@ -26,7 +26,7 @@ http헤더정보("host") : <%=request.getHeader("host") %><br>
 4. response를 http에 전달
 5. http가 사용자 전달
 6. request,response, 처리 담당자 기억 장소 해제, 연결 종료
-```
+```java
 // 사용자의 http header 정보 변경 명령
 
 response.setHeader("accept-language", "ko-KR");

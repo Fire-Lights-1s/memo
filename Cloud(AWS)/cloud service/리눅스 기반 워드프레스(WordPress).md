@@ -110,28 +110,30 @@ Enter password: (엔터)
 ```
 => root는 마리아DB 관리자 계정. 패스워드를 설정한 적이 없으므로 엔터키를 입력
 
-```
+```sql
 show databases;
 ```
 => 마리아DB의 데이터베이스 이름 확인
 => Database는 schema 라고 하며 내부에 0개 이상의 테이블을 가지고 있음.
 
-```
+```sql
 create database wpDB;
 ```
 => 워드프레스가 사용할 데이터베이스 wpDB를 생성
 
-```
+```sql
 show databases;
 ```
 => 생성된 wpDB가 보임
 
 <grant 명령어 기본 문법 >
+```sql
 grant [권한] on [사용할 데이터베이스명] to [유저명] identified by [비밀번호]
+```
 ※ grant : 권한을 설정하는 명령어(<-> revoke)
 ※ 권한(CRUD) : Create(만들고), Read(읽고, select), Update(수정하고), Delete(삭제)
 
-```
+```sql
 grant all privileges on wpDB.* to wpUser@localhost identified by '1234';
 ```
 => wpDB를 워드프레스가 사용할 수 있도록 설정

@@ -8,7 +8,7 @@
 - java폴더 lang폴더 => Class.java (Class.class) => Java 프로그램 사용 => 기본폴더
 
 >Class 파일 관리하는 명령 모음
-```
+```java
 Class.forName("com.mysql.cj.jdbc.Driver");
 ```
   
@@ -25,7 +25,7 @@ Class.forName("com.mysql.cj.jdbc.Driver");
 >url : 데이터베이스 서버 웹 주소,
 >user : 데이터베이스 서버에 접속할 수 있는 user
 >password : 데이터베이스 서버 접속 비밀번호
-```
+```java
 String dbUrl = "jdbc:mysql://localhost:3306/jspdb?serverTimezone=Asia/Seoul";
 
 String dbUser = "root";
@@ -35,6 +35,6 @@ String dbPass = "1234";
 >import="java.sql.Connection" 자바프로그램 위치 표시
 >
 >Connection : 데이터베이스 연결 정보를 저장 프로그램
-```
+```java
 Connection con = DriverManager.getConnection(dbUrl, dbUser, dbPass);
 ```

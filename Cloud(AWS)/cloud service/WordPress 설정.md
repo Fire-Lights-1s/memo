@@ -1,15 +1,15 @@
-cd /var/www/html/wordpress
+- cd /var/www/html/wordpress
 
-워드프레스의 설정 파일 이름 wp-config.php 이다!
+- 워드프레스의 설정 파일 이름 wp-config.php 이다!
 => 이 파일이 존재하지 않음
 => wp-config-sample.php를 복사해서 wp-config.php 를 생성해야 함
 
 ```
 cp wp-config-sample.php /var/www/html/wordpress/wp-config.php
 ```
-※ cp [무엇을(원본)] [~로(복사본)]
-=> 현재 위치(pwd)가 /var/www/html/wordpress 이라면 
-     cp wp-config-sample.php wp-config.php 명령어를 입력하면 같은 디렉터리(폴더) 내에 복사가 됨
+>※ cp \[무엇을(원본)] \[~로(복사본)]
+>=> 현재 위치(pwd)가 /var/www/html/wordpress 이라면 
+ >    cp wp-config-sample.php wp-config.php 명령어를 입력하면 같은 디렉터리(폴더) 내에 복사가 됨
 
 - vi wp-config.php
 => 복사된 wp-config.php 파일을 수정
