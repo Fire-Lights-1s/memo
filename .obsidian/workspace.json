@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud(AWS)/MariaDB/MariaDB Database Server.md",
+                "file": "정처기/디자인 패턴.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud(AWS)/MariaDB/MariaDB Database Server.md",
+                "file": "정처기/디자인 패턴.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud(AWS)/MariaDB/MariaDB Database Server.md",
+                "file": "정처기/디자인 패턴.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud(AWS)/MariaDB/MariaDB Database Server.md"
+                "file": "정처기/디자인 패턴.md"
               }
             }
           }
@@ -162,9 +162,20 @@
   },
   "active": "3a2b4deadd76a751",
   "lastOpenFiles": [
-    "grant 명령어.md",
-    "Cloud(AWS)/MariaDB/MariaDB Database Server.md",
+    "정처기/라우팅(Routing).md",
+    "정처기/디자인 패턴.md",
+    "CSS/div에서 공백이 생기는 경우.md",
     "Cloud(AWS)/cloud service/OwnCloud 클라우드 서비스.md",
+    "CSS",
+    "무제 파일.md",
+    "정처기/소프트웨어 구축.md",
+    "JSP/Session 객체.md",
+    "DataBase/DB 생성 및 운영에 필요한 SQL 문법.md",
+    "DataBase/MySQL 함수.md",
+    "정처기/UML.md",
+    "DataBase/HR 스키마 - ERD 만들기.md",
+    "Cloud(AWS)/MariaDB/MariaDB Database Server.md",
+    "grant 명령어.md",
     "Cloud(AWS)/cloud service/WordPress 설정.md",
     "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
     "Cloud(AWS)/리눅스 설치(버추얼 박스).md",
@@ -177,19 +188,9 @@
     "Cloud(AWS)/cloud service",
     "Cloud(AWS)/웹(web) 서버.md",
     "Cloud(AWS)/web 서버 만들기 - TUI 환경.md",
-    "DataBase/DB 생성 및 운영에 필요한 SQL 문법.md",
     "DataBase/서브 쿼리(Subquery).md",
-    "정처기/소프트웨어 구축.md",
-    "정처기/라우팅(Routing).md",
     "정처기/네트워크.md",
-    "정처기/UML.md",
     "정처기/C언어.md",
-    "사이트.md",
-    "유니코드.md",
-    "진수.md",
-    "DataBase/where절과 order by절.md",
-    "DataBase/조인(join).md",
-    "JSP/Session 객체.md",
     "정처기",
     "MySQL",
     "정처기",
@@ -197,7 +198,6 @@
     "네트워크(Network)",
     "Cloud(AWS)",
     "JSP",
-    "Java",
-    "DataBase"
+    "Java"
   ]
 }
