@@ -8,31 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "56d998bca5beb848",
+            "id": "3a2b4deadd76a751",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud(AWS)/cloud service/OwnCloud 클라우드 서비스.md",
+                "file": "Cloud(AWS)/리눅스 파일 압축 및 체계.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3a2b4deadd76a751",
+            "id": "1f825240c0096ce5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "정처기/디자인 패턴.md",
+                "file": "Cloud(AWS)/MariaDB in linux/데이터베이스 이중화.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "정처기/디자인 패턴.md",
+                "file": "Cloud(AWS)/리눅스 파일 압축 및 체계.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "정처기/디자인 패턴.md",
+                "file": "Cloud(AWS)/리눅스 파일 압축 및 체계.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "정처기/디자인 패턴.md"
+                "file": "Cloud(AWS)/리눅스 파일 압축 및 체계.md"
               }
             }
           }
@@ -162,42 +161,42 @@
   },
   "active": "3a2b4deadd76a751",
   "lastOpenFiles": [
-    "정처기/라우팅(Routing).md",
-    "정처기/디자인 패턴.md",
-    "CSS/div에서 공백이 생기는 경우.md",
-    "Cloud(AWS)/cloud service/OwnCloud 클라우드 서비스.md",
-    "CSS",
-    "무제 파일.md",
-    "정처기/소프트웨어 구축.md",
-    "JSP/Session 객체.md",
-    "DataBase/DB 생성 및 운영에 필요한 SQL 문법.md",
-    "DataBase/MySQL 함수.md",
-    "정처기/UML.md",
-    "DataBase/HR 스키마 - ERD 만들기.md",
-    "Cloud(AWS)/MariaDB/MariaDB Database Server.md",
-    "grant 명령어.md",
-    "Cloud(AWS)/cloud service/WordPress 설정.md",
-    "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
-    "Cloud(AWS)/리눅스 설치(버추얼 박스).md",
-    "Cloud(AWS)/리눅스 초기설정.md",
-    "Cloud(AWS)/원격 접속.md",
-    "Cloud(AWS)/가상머신(VM) 과 윈도우가 통신할 수 있는 방법.md",
-    "Cloud(AWS)/php 버전 업데이트 설정 for linux.md",
-    "Cloud(AWS)/vi 편집기.md",
-    "Cloud(AWS)/MariaDB",
-    "Cloud(AWS)/cloud service",
+    "Cloud(AWS)/MariaDB in linux/데이터베이스 이중화.md",
+    "Cloud(AWS)/MariaDB in linux/MariaDB Database Server.md",
+    "Cloud(AWS)/리눅스 파일 압축 및 체계.md",
     "Cloud(AWS)/웹(web) 서버.md",
-    "Cloud(AWS)/web 서버 만들기 - TUI 환경.md",
+    "Cloud(AWS)/MariaDB in linux/데이터베이스 백업 및 복원.md",
+    "네트워크(Network)/클래스.md",
+    "cor_edit/META-INF/MANIFEST.MF",
+    "cor_edit/META-INF",
+    "cor_edit/com/oreilly/servlet/multipart/PartInputStream.java",
+    "cor_edit/com/oreilly/servlet/multipart/Part.java",
+    "cor_edit/com/oreilly/servlet/multipart/ParamPart.java",
+    "cor_edit/com/oreilly/servlet/multipart/MultipartParser.java",
+    "cor_edit/com/oreilly/servlet/multipart/MacBinaryDecoderOutputStream.java",
+    "cor_edit/com/oreilly/servlet/multipart/LimitedServletInputStream.java",
+    "cor_edit/com/oreilly/servlet/multipart/FileRenamePolicy.java",
+    "cor_edit/com/oreilly/servlet/multipart/FilePart.java",
+    "정처기/SQL 구문 유형.md",
+    "DataBase/데이터 조작어(DML).md",
+    "DataBase/데이터 정의어(DDL).md",
+    "DataBase/DB 생성 및 운영에 필요한 SQL 문법.md",
+    "DataBase/트랜잭션제어어(TCL).md",
+    "MySQL/단일행함수 - 날짜 함수.md",
+    "MySQL/단일행함수 - 문자 함수.md",
+    "MySQL/그룹함수.md",
+    "DataBase/데이터 조회(select).md",
     "DataBase/서브 쿼리(Subquery).md",
-    "정처기/네트워크.md",
-    "정처기/C언어.md",
-    "정처기",
-    "MySQL",
-    "정처기",
-    "무제 파일.canvas",
-    "네트워크(Network)",
-    "Cloud(AWS)",
-    "JSP",
-    "Java"
+    "Java/Java EE에서 Jakarta EE로의 전환.md",
+    "JSP/JSP에서 MySQL 활용.md",
+    "Java/MySQL 연동.md",
+    "JSP/MultipartRequest를 통한 파일 업로드.md",
+    "Cloud(AWS)/cloud service/OwnCloud 클라우드 서비스.md",
+    "CSS/div에서 공백이 생기는 경우.md",
+    "JSP/Request & Response 객체.md",
+    "JSP/jsp 파일 업로드 & 다운로드.md",
+    "정처기/디자인 패턴.md",
+    "정처기/라우팅(Routing).md",
+    "무제 파일.canvas"
   ]
 }

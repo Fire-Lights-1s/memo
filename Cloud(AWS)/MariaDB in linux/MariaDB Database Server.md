@@ -269,7 +269,7 @@ select * from customer;
 ```
 
 ---
-#### 사용자 추가
+#### 사용자 추가 - GRANT
 ```sql
 grant all [privileges] on shopping_db.* to itwill@localhost identified by '1234';
 ```
@@ -328,7 +328,7 @@ mysql -uitwill -h192.168.56.103 -p
 ```
 ※ 만약, 에러가 발생하면
 1) DB서버의 방화벽이 동작하고 있고, mysql을 허용하지 않았다면 방화벽 설정필요!
-2) 마리아DB 서버 내의 itwill@'클라이언트IP주소'의 [grant 명령어](<#사용자 추가>) 필요!
+2) 마리아DB 서버 내의 itwill@'클라이언트IP주소'의 [grant 명령어](<#사용자 추가 - GRANT>) 필요!
 
 ★ DB서버로 이동
 

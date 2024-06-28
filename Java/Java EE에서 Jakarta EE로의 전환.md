@@ -1,0 +1,2 @@
+- https://www.samsungsds.com/kr/insights/java_jakarta.html
+- 2017년 이클립스 재단에 자바EE 프로젝트를 이관하면서 네임스페이스를 jakarta로, API 패키지명은 jakarta.\*로 변경 되었음
