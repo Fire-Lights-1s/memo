@@ -70,7 +70,7 @@ where SALARY >= 10000 or JOB_ID like '%man%';
 SELECT 컬럼명1, 컬럼명2,...
 FROM 테이블명
 WHERE 조건문
-ORDER BY 컬럼명 [asc | desc];
+ORDER BY 컬럼명 [ASC | DESC];
 ```
 - order by 절에 colum alias 사용 가능함
 ```sql

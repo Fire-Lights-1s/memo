@@ -1,8 +1,8 @@
 ```sql
-select * | 컬럼명1, 컬럼명2,...
-from 테이블명
-[where 조건문]
-[order by 컬럼명 [asc | desc]];
+SELECT * | 컬럼명1, 컬럼명2,...
+FROM 테이블명
+[WHERE 조건문]
+[ORDER BY 컬럼명 [ASC | DESC]];
 ```
 - 논리 연산자에도 우선순위가 있음
 - 산술식에 null값이 포함된 경우 그 결과도 null이다
