@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/데이터 정의어(DDL).md",
-                "mode": "source",
+                "file": "CSS/box-sizing.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/데이터 정의어(DDL).md",
+                "file": "CSS/box-sizing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/데이터 정의어(DDL).md",
+                "file": "CSS/box-sizing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/데이터 정의어(DDL).md"
+                "file": "CSS/box-sizing.md"
               }
             }
           }
@@ -162,32 +162,32 @@
   },
   "active": "01b7c269812a3cb6",
   "lastOpenFiles": [
-    "DataBase/트랜잭션제어어(TCL).md",
-    "DataBase/조인(join).md",
-    "DataBase/데이터 정의어(DDL).md",
-    "정처기/네트워크.md",
     "정처기/라우팅(Routing).md",
-    "정처기/UML.md",
-    "DataBase/그룹화.md",
-    "DataBase/서브 쿼리(Subquery).md",
     "정처기/SQL 구문 유형.md",
-    "DataBase/데이터 조회(select).md",
-    "DataBase/정규화.md",
-    "DataBase/데이터 조작어(DML).md",
-    "DataBase/HR 스키마 - ERD 만들기.md",
-    "DataBase/where절과 order by절.md",
-    "DataBase/DB 생성 및 운영에 필요한 SQL 문법.md",
-    "정처기/응집도 & 결합도.md",
-    "Java/생성자(Constructor).md",
-    "정처기/디자인 패턴.md",
     "정처기/소프트웨어 구축.md",
+    "정처기/응집도 & 결합도.md",
     "정처기/C언어.md",
-    "Cloud(AWS)/리눅스 파일 압축 및 체계.md",
-    "Cloud(AWS)/MariaDB in linux/데이터베이스 이중화.md",
-    "Cloud(AWS)/MariaDB in linux/MariaDB Database Server.md",
-    "Cloud(AWS)/웹(web) 서버.md",
-    "Cloud(AWS)/MariaDB in linux/데이터베이스 백업 및 복원.md",
+    "CSS/div에서 공백이 생기는 경우.md",
+    "CSS/box-sizing.md",
+    "네트워크(Network)/IP 주소(IPv4).md",
     "네트워크(Network)/클래스.md",
+    "정처기/UML.md",
+    "DataBase/서브 쿼리(Subquery).md",
+    "DataBase/조인(join).md",
+    "DataBase/트랜잭션제어어(TCL).md",
+    "DataBase/DB 생성 및 운영에 필요한 SQL 문법.md",
+    "DataBase/MySQL 함수.md",
+    "DataBase/where절과 order by절.md",
+    "DataBase/HR 스키마 - ERD 만들기.md",
+    "Java/MySQL 연동.md",
+    "Java/Java EE에서 Jakarta EE로의 전환.md",
+    "Java/형 변환.md",
+    "Java/생성자(Constructor).md",
+    "Java/문자와 문자열.md",
+    "MySQL/단일행함수 - 문자 함수.md",
+    "MySQL/단일행함수 - 날짜 함수.md",
+    "MySQL/그룹함수.md",
+    "Java/논리 연산 주의 사항.md",
     "cor_edit/META-INF/MANIFEST.MF",
     "cor_edit/META-INF",
     "cor_edit/com/oreilly/servlet/multipart/PartInputStream.java",
