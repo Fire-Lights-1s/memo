@@ -166,7 +166,7 @@ cp /usr/share/mysql/my-small.cnf /etc/my.cnf
 => /usr/share/mysql/my-small.cnf 파일을 /etc 디렉터리안에 my.cnf 라는 이름으로 변경해서 복사
 => 같은 이름으로 복사할 때는 파일명을 생략
 
-cp: overwrite `/etc/my.cnf'?
+cp: overwrite /etc/my.cnf'?
 => 이미 my.cnf 파일이 존재하므로 덮어쓸것인지 물어보는 것
 => y 를 입력
 

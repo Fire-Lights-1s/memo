@@ -1,6 +1,7 @@
 ## 데이터 조작어(DML - Data Manipulation Language)
 - 데이터 삽입, 수정, 삭제하는 명령어
 - DML 종류 : insert, update, delete
+- 작업을 완료 후 commit을 해야함
 
 ### 데이터 삽입(insert)
 - 문법
