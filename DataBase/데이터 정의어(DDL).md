@@ -177,3 +177,28 @@ DROP TABLE dept80;
 ```sql
 TRUNCATE TABLE dept80;
 ```
+### View
+- 개념 : 하나이상의 테이블을 기반으로 생성은 되었으나 물리적으로 존재하지는 않고 DB에 정의만 되어 있는 가상의 논리적인 테이블 
+- 목적 
+	1. 보안성 
+	2. 공간 효율성
+	3. 편의성
+
+```sql
+CREATE VIEW 뷰명
+AS SELECT 컬럼1,컬럼2,컬럼3,...
+FROM 테이블명
+WHERE 조건문;
+```
+- 복합 뷰는 DML 작업이 안된다
+- 복합 뷰 예시
+```sql
+create view dept_sal_vu
+as select d.DEPARTMENT_NAME, sum(e.SALARY) as "급여 합계",
+avg(e.SALARY) as "급여 평균", min(e.SALARY) as "최소 급여",
+max(e.SALARY) as "최대 급여"
+from employees e join departments d
+on e.DEPARTMENT_ID = d.DEPARTMENT_ID
+group by d.DEPARTMENT_NAME
+order by d.DEPARTMENT_NAME;
+```
