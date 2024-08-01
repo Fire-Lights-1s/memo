@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JSP/Spring/HomeController.java 파일.md",
+                "file": "JSP/Spring/스프링에서 객체 생성.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JSP/Spring/HomeController.java 파일.md",
+                "file": "JSP/Spring/스프링에서 객체 생성.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JSP/Spring/HomeController.java 파일.md",
+                "file": "JSP/Spring/스프링에서 객체 생성.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JSP/Spring/HomeController.java 파일.md"
+                "file": "JSP/Spring/스프링에서 객체 생성.md"
               }
             }
           }
@@ -162,10 +162,15 @@
   },
   "active": "cb3cc3c8af935cb2",
   "lastOpenFiles": [
-    "JSP/Spring/servlet-context.xml 파일.md",
-    "JSP/Spring/HomeController.java 파일.md",
-    "JSP/Spring/Spring framework.md",
     "JSP/Spring/web.xml 파일.md",
+    "JSP/Spring/스프링에서 객체 생성.md",
+    "Java/인터페이스(Interface).md",
+    "JSP/Spring/DI, IoC.md",
+    "JSP/Spring/web.xml한글 설정.md",
+    "JSP/Spring/스프링의 기능.md",
+    "JSP/Spring/HomeController.java 파일.md",
+    "JSP/Spring/servlet-context.xml 파일.md",
+    "JSP/Spring/Spring framework.md",
     "JSP/MVC example/web.xml 코드.md",
     "JSP/MVC패턴.md",
     "JSP/Spring",
@@ -185,11 +190,6 @@
     "MySQL/단일행함수 - 숫자 함수.md",
     "DataBase/조인(join).md",
     "DataBase/where절과 order by절.md",
-    "DataBase/데이터 조회(select).md",
-    "DataBase/데이터 조작어(DML).md",
-    "DataBase/제약 조건.md",
-    "DataBase/데이터 정의어(DDL).md",
-    "JSP/JSTL(JSP Standard Tag Library).md",
     "JSP/MVC example",
     "CSS/image",
     "CSS/image/float.png",
