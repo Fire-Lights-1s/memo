@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c6ec442ab722b116",
+        "id": "733368e21c99a64a",
         "type": "tabs",
         "children": [
           {
-            "id": "01b7c269812a3cb6",
+            "id": "d349e8d370f90c6d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JSP/MVC패턴.md",
+                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
                 "mode": "preview",
                 "source": false
               }
             }
-          },
-          {
-            "id": "cb3cc3c8af935cb2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md"
+                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md"
               }
             }
           }
@@ -160,36 +147,36 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "cb3cc3c8af935cb2",
+  "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
-    "JSP/Spring/web.xml 파일.md",
-    "JSP/Spring/스프링에서 객체 생성.md",
-    "Java/인터페이스(Interface).md",
-    "JSP/Spring/DI, IoC.md",
-    "JSP/Spring/web.xml한글 설정.md",
-    "JSP/Spring/스프링의 기능.md",
-    "JSP/Spring/HomeController.java 파일.md",
-    "JSP/Spring/servlet-context.xml 파일.md",
-    "JSP/Spring/Spring framework.md",
-    "JSP/MVC example/web.xml 코드.md",
-    "JSP/MVC패턴.md",
-    "JSP/Spring",
-    "DataStructure/템플릿 메소드 패턴.md",
-    "정처기/라우팅(Routing).md",
-    "정처기/디자인 패턴.md",
-    "Java/추상화.md",
+    "Cloud(AWS)/AWS/ApacheTomcat with AWS.md",
+    "Cloud(AWS)/AWS/AWS EC2 인스턴스 파일 업로드.md",
+    "Cloud(AWS)/버추얼 박스 가져오기 내보내기.md",
+    "Cloud(AWS)/리눅스 설치(버추얼 박스).md",
+    "Cloud(AWS)/도메인.md",
+    "Cloud(AWS)/네임 서버.md",
+    "Cloud(AWS)/가상머신(VM) 과 윈도우가 통신할 수 있는 방법.md",
+    "Cloud(AWS)/linux/링크(Link).md",
+    "Cloud(AWS)/linux/리눅스 파일 압축 및 체계.md",
     "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md",
     "Cloud(AWS)/AWS/AWS EC2 생성.md",
     "Cloud(AWS)/AWS/AWS 계정 생성.md",
-    "Cloud(AWS)/web 서버 만들기 - TUI 환경.md",
+    "Cloud(AWS)/리눅스 초기설정.md",
+    "Cloud(AWS)/linux/파일 검색(find).md",
+    "Cloud(AWS)/Apache Tomcat.md",
+    "JSP/Spring/DI, IoC.md",
+    "Java/인터페이스(Interface).md",
+    "Java/어노테이션(Annotation).md",
+    "DataBase/데이터 정의어(DDL).md",
+    "JSP/MVC패턴.md",
+    "DataStructure/3계층 구조.md",
+    "DataBase/정규화.md",
+    "DataBase/데이터 모델링.md",
+    "JSP/Spring/스프링에서 객체 생성.md",
+    "JSP/Spring/web.xml 파일.md",
+    "JSP/Spring/web.xml한글 설정.md",
+    "JSP/Spring",
     "Cloud(AWS)/AWS",
-    "Cloud(AWS)/무제 파일.md",
-    "Cloud(AWS)/셸 스크립트 프로그래밍.md",
-    "MySQL/단일행함수 - 제어 흐름 함수.md",
-    "MySQL/단일행함수 - 시스템 정보 함수.md",
-    "MySQL/단일행함수 - 숫자 함수.md",
-    "DataBase/조인(join).md",
-    "DataBase/where절과 order by절.md",
     "JSP/MVC example",
     "CSS/image",
     "CSS/image/float.png",
