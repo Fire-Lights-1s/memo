@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
-                "mode": "preview",
+                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
+                "file": "JSP/Spring/스프링에서 객체 생성.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
+                "file": "JSP/Spring/스프링에서 객체 생성.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md"
+                "file": "JSP/Spring/스프링에서 객체 생성.md"
               }
             }
           }
@@ -149,6 +149,19 @@
   },
   "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
+    "JSP/Spring/마이바티스 설치 및 설정.md",
+    "JSP/Spring/스프링의 기능.md",
+    "JSP/Spring/스프링에서 객체 생성.md",
+    "JSP/Spring/root-context 과 servlet-context.md",
+    "JSP/Spring/servlet-context.xml 파일.md",
+    "JSP/Spring/web.xml 파일.md",
+    "JSP/Spring/DI, IoC.md",
+    "JSP/Spring/Spring framework.md",
+    "JSP/Spring/web.xml한글 설정.md",
+    "CSS/가상 선택자.md",
+    "Java/어노테이션(Annotation).md",
+    "Java/인터페이스(Interface).md",
+    "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
     "Cloud(AWS)/AWS/ApacheTomcat with AWS.md",
     "Cloud(AWS)/AWS/AWS EC2 인스턴스 파일 업로드.md",
     "Cloud(AWS)/버추얼 박스 가져오기 내보내기.md",
@@ -162,19 +175,6 @@
     "Cloud(AWS)/AWS/AWS EC2 생성.md",
     "Cloud(AWS)/AWS/AWS 계정 생성.md",
     "Cloud(AWS)/리눅스 초기설정.md",
-    "Cloud(AWS)/linux/파일 검색(find).md",
-    "Cloud(AWS)/Apache Tomcat.md",
-    "JSP/Spring/DI, IoC.md",
-    "Java/인터페이스(Interface).md",
-    "Java/어노테이션(Annotation).md",
-    "DataBase/데이터 정의어(DDL).md",
-    "JSP/MVC패턴.md",
-    "DataStructure/3계층 구조.md",
-    "DataBase/정규화.md",
-    "DataBase/데이터 모델링.md",
-    "JSP/Spring/스프링에서 객체 생성.md",
-    "JSP/Spring/web.xml 파일.md",
-    "JSP/Spring/web.xml한글 설정.md",
     "JSP/Spring",
     "Cloud(AWS)/AWS",
     "JSP/MVC example",

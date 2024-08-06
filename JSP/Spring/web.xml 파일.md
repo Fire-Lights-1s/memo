@@ -1,3 +1,7 @@
+# web.xml
+web.xml에서 서블릿 맵핑 되는 방법, 인증이 필요한 URL 등의 정보를 확인한다
+모든 web application은 반드시 하나의 web.xml 파일을 가져야 하고 위치는 WEB-INF 폴더 아래에 있다
+web.xml 파일의 설정들은 web application 시작 시 메모리에 로딩된다
 ```jsp
 <!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 <context-param>

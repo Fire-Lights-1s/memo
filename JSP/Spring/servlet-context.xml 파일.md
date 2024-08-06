@@ -1,4 +1,5 @@
 ## servlet-context.xml
+파일을 스캔하고 경로 매핑을함
 ```jsp
 <!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 	
