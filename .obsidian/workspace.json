@@ -13,10 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "file": "Java/문자와 문자열.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "d7ae03fee12f5e94",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "file": "Java/문자와 문자열.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "file": "Java/문자와 문자열.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md"
+                "file": "Java/문자와 문자열.md"
               }
             }
           }
@@ -149,9 +157,11 @@
   },
   "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
+    "Java/기본 연산자.md",
+    "네트워크(Network)/HTTP.md",
+    "JSP/Spring/스프링에서 객체 생성.md",
     "JSP/Spring/마이바티스 설치 및 설정.md",
     "JSP/Spring/스프링의 기능.md",
-    "JSP/Spring/스프링에서 객체 생성.md",
     "JSP/Spring/root-context 과 servlet-context.md",
     "JSP/Spring/servlet-context.xml 파일.md",
     "JSP/Spring/web.xml 파일.md",
@@ -173,8 +183,6 @@
     "Cloud(AWS)/linux/리눅스 파일 압축 및 체계.md",
     "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md",
     "Cloud(AWS)/AWS/AWS EC2 생성.md",
-    "Cloud(AWS)/AWS/AWS 계정 생성.md",
-    "Cloud(AWS)/리눅스 초기설정.md",
     "JSP/Spring",
     "Cloud(AWS)/AWS",
     "JSP/MVC example",
