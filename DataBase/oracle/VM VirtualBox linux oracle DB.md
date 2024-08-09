@@ -13,8 +13,13 @@ sqlplus 프로그램 실행
 sqlplus /nolog
 ```
 
-DB에 접속하는 명령어
+sys 사용자로 DB에 접속하는 명령어
 ```
 conn sys/oracle as sysdba
 conn 유저명/패스워드 as 권한명
+```
+
+DB 시작 
+```
+startup
 ```
