@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
-                "mode": "source",
+                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
+                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
+                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md"
+                "file": "Cloud(AWS)/cloud service/WordPress 설정.md"
               }
             }
           }
@@ -157,8 +157,8 @@
   },
   "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
-    "Cloud(AWS)/cloud service/WordPress 설정.md",
     "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
+    "Cloud(AWS)/cloud service/WordPress 설정.md",
     "Cloud(AWS)/웹(web) 서버.md",
     "Cloud(AWS)/원격 접속.md",
     "Cloud(AWS)/도메인.md",
