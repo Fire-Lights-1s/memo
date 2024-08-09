@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "file": "DataBase/oracle/linux oracle.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "file": "DataBase/oracle/linux oracle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md",
+                "file": "DataBase/oracle/linux oracle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JSP/Spring/스프링에서 객체 생성.md"
+                "file": "DataBase/oracle/linux oracle.md"
               }
             }
           }
@@ -157,11 +157,13 @@
   },
   "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
+    "JSP/Spring/스프링에서 객체 생성.md",
+    "DataBase/oracle/linux oracle.md",
+    "DataBase/oracle",
     "Java/문자와 문자열.md",
     "README.md",
     "Java/기본 연산자.md",
     "네트워크(Network)/HTTP.md",
-    "JSP/Spring/스프링에서 객체 생성.md",
     "JSP/Spring/마이바티스 설치 및 설정.md",
     "JSP/Spring/스프링의 기능.md",
     "JSP/Spring/root-context 과 servlet-context.md",
@@ -182,7 +184,6 @@
     "Cloud(AWS)/네임 서버.md",
     "Cloud(AWS)/가상머신(VM) 과 윈도우가 통신할 수 있는 방법.md",
     "Cloud(AWS)/linux/링크(Link).md",
-    "Cloud(AWS)/linux/리눅스 파일 압축 및 체계.md",
     "JSP/Spring",
     "Cloud(AWS)/AWS",
     "JSP/MVC example",
@@ -193,7 +194,6 @@
     "DataStructure",
     "Cloud(AWS)/linux",
     "cor_edit/META-INF/MANIFEST.MF",
-    "cor_edit/META-INF",
     "무제 파일.canvas"
   ]
 }
