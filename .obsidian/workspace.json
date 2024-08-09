@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
+                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
+                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
+                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud(AWS)/cloud service/WordPress 설정.md"
+                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md"
               }
             }
           }
@@ -157,13 +157,13 @@
   },
   "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
+    "Cloud(AWS)/cloud service/WordPress 설정.md",
     "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
     "Cloud(AWS)/웹(web) 서버.md",
     "Cloud(AWS)/원격 접속.md",
     "Cloud(AWS)/도메인.md",
     "Cloud(AWS)/네임 서버.md",
     "Cloud(AWS)/가상머신(VM) 과 윈도우가 통신할 수 있는 방법.md",
-    "Cloud(AWS)/cloud service/WordPress 설정.md",
     "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md",
     "Cloud(AWS)/AWS/AWS EC2 생성.md",
     "DataBase/oracle/VM VirtualBox linux oracle DB.md",
