@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud(AWS)/AWS/AWS EC2 생성.md",
+                "file": "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud(AWS)/AWS/AWS EC2 생성.md",
+                "file": "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud(AWS)/AWS/AWS EC2 생성.md",
+                "file": "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud(AWS)/AWS/AWS EC2 생성.md"
+                "file": "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md"
               }
             }
           }
@@ -155,8 +155,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d349e8d370f90c6d",
+  "active": "325447f39b6d31b4",
   "lastOpenFiles": [
+    "Cloud(AWS)/AWS/AWS EC2 생성.md",
     "DataBase/oracle/VM VirtualBox linux oracle DB.md",
     "JSP/Spring/스프링에서 객체 생성.md",
     "DataBase/oracle",
@@ -183,7 +184,6 @@
     "Cloud(AWS)/도메인.md",
     "Cloud(AWS)/네임 서버.md",
     "Cloud(AWS)/가상머신(VM) 과 윈도우가 통신할 수 있는 방법.md",
-    "Cloud(AWS)/linux/링크(Link).md",
     "JSP/Spring",
     "Cloud(AWS)/AWS",
     "JSP/MVC example",
