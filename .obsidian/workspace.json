@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
+                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
+                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
+                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md"
+                "file": "Cloud(AWS)/cloud service/WordPress 설정.md"
               }
             }
           }
@@ -157,6 +157,7 @@
   },
   "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
+    "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
     "Cloud(AWS)/웹(web) 서버.md",
     "Cloud(AWS)/원격 접속.md",
     "Cloud(AWS)/도메인.md",
@@ -183,7 +184,6 @@
     "CSS/가상 선택자.md",
     "Java/어노테이션(Annotation).md",
     "Java/인터페이스(Interface).md",
-    "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
     "JSP/Spring",
     "Cloud(AWS)/AWS",
     "JSP/MVC example",
