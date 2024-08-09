@@ -34,7 +34,7 @@ cp wp-config-sample.php /var/www/html/wordpress/wp-config.php
 
 로그인 => 관리자 페이지로 이동!
 
-================================================
+---
 #### URL 설정
 현재 wordpress는 서버IP주소/wordpress로 접근해야 함
 주소창에 서버IP주소만 입력하면 wordpress 화면이 보이도록 설정
