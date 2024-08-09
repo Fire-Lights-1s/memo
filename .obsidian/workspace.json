@@ -157,6 +157,7 @@
   },
   "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
+    "README.md",
     "Java/기본 연산자.md",
     "네트워크(Network)/HTTP.md",
     "JSP/Spring/스프링에서 객체 생성.md",
@@ -182,7 +183,6 @@
     "Cloud(AWS)/linux/링크(Link).md",
     "Cloud(AWS)/linux/리눅스 파일 압축 및 체계.md",
     "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md",
-    "Cloud(AWS)/AWS/AWS EC2 생성.md",
     "JSP/Spring",
     "Cloud(AWS)/AWS",
     "JSP/MVC example",
