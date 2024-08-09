@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DataBase/oracle/linux oracle.md",
+                "file": "DataBase/oracle/VM VirtualBox linux oracle DB.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DataBase/oracle/linux oracle.md",
+                "file": "DataBase/oracle/VM VirtualBox linux oracle DB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DataBase/oracle/linux oracle.md",
+                "file": "DataBase/oracle/VM VirtualBox linux oracle DB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DataBase/oracle/linux oracle.md"
+                "file": "DataBase/oracle/VM VirtualBox linux oracle DB.md"
               }
             }
           }
@@ -158,7 +158,7 @@
   "active": "d349e8d370f90c6d",
   "lastOpenFiles": [
     "JSP/Spring/스프링에서 객체 생성.md",
-    "DataBase/oracle/linux oracle.md",
+    "DataBase/oracle/VM VirtualBox linux oracle DB.md",
     "DataBase/oracle",
     "Java/문자와 문자열.md",
     "README.md",
