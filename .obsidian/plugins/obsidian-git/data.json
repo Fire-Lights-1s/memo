@@ -1,9 +1,9 @@
 {
-  "commitMessage": "vault backup: {{date}} {{hostname}} {{files}}",
+  "commitMessage": "vault backup: {{date}} {{hostname}}",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 5,
   "autoPushInterval": 5,
-  "autoPullInterval": 2,
+  "autoPullInterval": 1,
   "autoPullOnBoot": false,
   "disablePush": false,
   "pullBeforePush": true,
@@ -54,5 +54,5 @@
     "lastShownAuthorDisplay": "initials",
     "lastShownDateTimeFormatOptions": "date"
   },
-  "autoCommitMessage": "vault backup: {{date}} {{hostname}} {{files}}"
+  "autoCommitMessage": "vault backup: {{date}} {{hostname}}"
 }

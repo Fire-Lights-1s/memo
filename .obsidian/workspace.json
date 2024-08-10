@@ -4,27 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "733368e21c99a64a",
+        "id": "c6ec442ab722b116",
         "type": "tabs",
         "children": [
           {
-            "id": "d349e8d370f90c6d",
+            "id": "3a2b4deadd76a751",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
+                "file": "JSP/Spring/Spring framework.md",
                 "mode": "preview",
                 "source": false
               }
-            }
-          },
-          {
-            "id": "d7ae03fee12f5e94",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ]
@@ -56,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#nameserver",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud(AWS)/cloud service/WordPress 설정.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud(AWS)/cloud service/WordPress 설정.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -147,53 +137,53 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "d349e8d370f90c6d",
+  "active": "325447f39b6d31b4",
   "lastOpenFiles": [
-    "Cloud(AWS)/cloud service/리눅스 기반 워드프레스(WordPress).md",
-    "Cloud(AWS)/cloud service/WordPress 설정.md",
-    "Cloud(AWS)/웹(web) 서버.md",
-    "Cloud(AWS)/원격 접속.md",
-    "Cloud(AWS)/도메인.md",
-    "Cloud(AWS)/네임 서버.md",
-    "Cloud(AWS)/가상머신(VM) 과 윈도우가 통신할 수 있는 방법.md",
-    "Cloud(AWS)/AWS/AWS EC2 인스턴스 원격(Remote) 접속.md",
-    "Cloud(AWS)/AWS/AWS EC2 생성.md",
-    "DataBase/oracle/VM VirtualBox linux oracle DB.md",
-    "JSP/Spring/스프링에서 객체 생성.md",
-    "DataBase/oracle",
-    "Java/문자와 문자열.md",
-    "README.md",
-    "Java/기본 연산자.md",
-    "네트워크(Network)/HTTP.md",
-    "JSP/Spring/마이바티스 설치 및 설정.md",
-    "JSP/Spring/스프링의 기능.md",
-    "JSP/Spring/root-context 과 servlet-context.md",
-    "JSP/Spring/servlet-context.xml 파일.md",
-    "JSP/Spring/web.xml 파일.md",
-    "JSP/Spring/DI, IoC.md",
     "JSP/Spring/Spring framework.md",
-    "JSP/Spring/web.xml한글 설정.md",
-    "CSS/가상 선택자.md",
-    "Java/어노테이션(Annotation).md",
-    "Java/인터페이스(Interface).md",
+    "conflict-files-obsidian-git.md",
+    "DataBase/oracle/VM VirtualBox linux oracle DB.md",
+    "DataBase/oracle",
+    "JSP/Apache Tomcat migration tool for Jakarta EE.md",
+    "JSP/JSP에서 MySQL 활용.md",
+    "JSP/jsp 파일 업로드 & 다운로드.md",
+    "JSP/JSP 에 대해.md",
+    "JSP/DB 연결 정보 관리(Connection Pool).md",
+    "DataBase/그룹화.md",
+    "DataBase/데이터 모델링.md",
+    "DataBase/where절과 order by절.md",
+    "DataBase/MySQL 함수.md",
+    "JSP/Session 객체.md",
+    "유니코드.md",
+    "README.md",
+    "진수.md",
+    "사이트.md",
+    "마크 다운 파일 링크.md",
+    "JSP/아파치 톰캣에 파일 올리기.md",
+    "Cloud(AWS)/Apache Tomcat.md",
+    "Cloud(AWS)/원격 접속.md",
+    "Cloud(AWS)/버추얼 박스 가져오기 내보내기.md",
+    "정처기/디자인 패턴.md",
+    "JSP/Spring/스프링의 기능.md",
+    "JSP/Spring/스프링에서 객체 생성.md",
+    "JSP/Spring/마이바티스 설치 및 설정.md",
     "JSP/Spring",
-    "Cloud(AWS)/AWS",
     "JSP/MVC example",
-    "CSS/image",
-    "CSS/image/float.png",
-    "cor_edit/cos_myJavaFile.zip",
-    "cor_edit/com.zip",
     "DataStructure",
-    "Cloud(AWS)/linux",
-    "cor_edit/META-INF/MANIFEST.MF",
+    "cor_edit/cos_jar_jakarta_java_file/com/oreilly/servlet/multipart/Part.class",
+    "cor_edit/cos_jar_jakarta_java_file/com/oreilly/servlet/multipart/PartInputStream.class",
+    "cor_edit/cos_jar_jakarta_java_file/com/oreilly/servlet/multipart/ParamPart.class",
+    "cor_edit/cos_jar_jakarta_java_file/com/oreilly/servlet/multipart/MultipartParser.class",
+    "cor_edit/cos_jar_jakarta_java_file/com/oreilly/servlet/multipart/MacBinaryDecoderOutputStream.class",
+    "cor_edit/cos_jar_jakarta_java_file/com/oreilly/servlet/multipart/LimitedServletInputStream.class",
+    "CSS/image/float.png",
     "무제 파일.canvas"
   ]
 }
