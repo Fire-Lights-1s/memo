@@ -5,7 +5,7 @@
 2. 뷰포트 메타 태그 작성 : 각각의 디바이스들을 크기에 맞게 인식하도록 할 때 사용하는 태그이다
 3. 형식 
 	- name : "viewport" -> 디바이스 화면이 표시되는 실제 화면 영역 
-	- content : "페이지 크기와 배율에 대한 설정"
+	- content : "페이지 크기와 배율을 제어하는 방법에  대한 브라우저의 지침을 지정"
 ```html
-<meta name="" content="">
+<meta name="viewport" content="">
 ```
