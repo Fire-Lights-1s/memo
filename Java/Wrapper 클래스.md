@@ -6,10 +6,10 @@
 | 기본타입(primitive type) | 래퍼클래스(wrapper class) |
 | -------------------- | -------------------- |
 | byte                 | Byte                 |
-| char                 | Char                 |
+| short                | Short                |
 | int                  | Integer              |
 | long                 | Long                 |
 | float                | Float                |
 | double               | Double               |
-| char                 | Ch                   |
-| boolean              |                      |
+| char                 | Character            |
+| boolean              | Boolean              |
