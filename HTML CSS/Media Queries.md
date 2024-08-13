@@ -8,3 +8,18 @@
 - 조건 설정
     - max-width : 데스크탑 기준으로 작업한 창을 다른 기기의 스크린으로 변경할 때 / 지정한 최대너비 이하는 볼 수 없다.
     - min-width : 모바일 기준으로 작업한 창을 다른 기기의 스크린으로 변경할 때 / 지정한 최소너비 이상은 볼 수 없다.
+```css
+@media screen and (max-width:779px){
+
+	body{
+		background-color: orange;
+	}
+	
+	#container{
+		width:700px;
+		margin:50px auto;
+	}
+
+
+}
+```
