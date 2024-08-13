@@ -7,5 +7,5 @@
 	- name : "viewport" -> 디바이스 화면이 표시되는 실제 화면 영역 
 	- content : "페이지 크기와 배율을 제어하는 방법에  대한 브라우저의 지침을 지정"
 ```html
-<meta name="viewport" content="">
+<meta name="viewport" content="width=device-width, initital-scale=1.0">
 ```
