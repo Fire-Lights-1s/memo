@@ -24,3 +24,5 @@ DB 시작
 startup
 ```
 
+## Oracle SQL Developer
+Ora
