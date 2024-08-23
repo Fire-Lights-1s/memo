@@ -74,7 +74,7 @@ sudo nano /var/www/html/index.html
 sudo vi /var/www/html/phpinfo.php
 ```
 ---
-```
+```php
 <?php
     phpinfo();
 ?>
