@@ -5,6 +5,7 @@ Column Alias : 오라클에선 대문자로만 출력
 3. 컬럼명 \[AS] “Alias” => **대소문자 구분, 공백 포함, 특수문자 포함을 원하는 경우**
 
 연결 연산자(||) : mysql에서의 concat()
+※oracle에서 concat()은 매개변수를 2개만 받을 수 있다
 
 ```sql
 select last_name || job_id as "Employees"
