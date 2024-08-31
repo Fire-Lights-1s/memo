@@ -54,10 +54,14 @@ sudo systemctl enable nginx
   4) nginx.conf 편집
 
 1) sites-available 디렉터리 생성 및 virtual.conf 파일 생성
+```
 cd /etc/nginx
 sudo mkdir sites-available
 sudo vi sites-available/virtual.conf
-============================
+```
+
+---
+```
 server {
     # 서버 IP 주소에 80번 포트로 오픈할 것을 선언
     listen 80;
@@ -75,43 +79,61 @@ server {
 	index index.php index.html;
     }
 }
-=====================
+```
+---
 esc -> :wq
 
 2) 로그 파일이 위치할 디렉터리 생성
+```
 sudo mkdir /var/log/nginx/virtual
+```
 
 3) HTML 파일이 위치할 디렉터리 생성(DocumentRoot)
+```
 sudo mkdir -p /var/www/virtual
+```
 ※ -p : /var/www 가 없으면 www를 만들고 그 아래에 virtual 생성
 
 4) nginx.conf 편집
+```
 sudo vi /etc/nginx/nginx.conf
-========================
+```
+---
 :set nu
 
 31번 라인 주석처리
+```
 #include /etc/nginx/conf.d/*.conf;
+```
 
 32번 라인 추가
+```
 include /etc/nginx/sites-available/*.conf;
-=====================================
+```
+---
 esc -> :wq
 
 10. 설정 파일이 올바른지 확인
+```
 sudo nginx -t
----------------
+```
+---
+```
 nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
 nginx: configuration file /etc/nginx/nginx.conf test is successful
------------------------------
+```
+---
 
 11. index.html 만들기
+```
 sudo vi /var/www/virtual/index.html
+```
 => 간단한 내용 입력
 
 12. nginx 재시작
+```
 sudo systemctl restart nginx
-
+```
 13. 윈도우 웹 브라우저에서 index.html 내용 확인
 
 14. php 설치
@@ -120,16 +142,24 @@ sudo systemctl restart nginx
 - AWS에서는 amazon-linux-extras 에서 제공하는 php를 설치할 수 있음
 - 아마존에서 제공하는 php8.1을 설치
 
+```
 sudo amazon-linux-extras 
+```
 => 66번 항목에 php8.1이 보임
 
+```
 sudo amazon-linux-extras enable php8.1
+```
 => php8.1 항목을 enable(활성화)하여 php를 설치할 때 php8.1이 기본값으로 선택되도록 설정
 
+```
 sudo yum -y install php php-fpm php-cli php-common php-devel php-pear php-mbstring php-mysqlnd php-pdo php-gd
+```
 => php 관련 파일 설치
 
+```
 which php-fpm
+```
 => php-fpm 위치 확인
 => /usr/sbin/php-fpm
 => 설정파일 위치 : /etc/nginx/conf.d/php-fpm.conf
@@ -139,21 +169,30 @@ which php-fpm
   php-fpm.conf 파일이 설정파일에 포함되지 못함!
 - 따라서 php-fpm.conf 파일을 /etc/nginx/sites-available/ 디렉터리(폴더)에 복사해야 함!
 
+```
 sudo cp /etc/nginx/conf.d/php-fpm.conf /etc/nginx/sites-avaiable/
+```
 => yum 명령어로 php-fpm을 설치하면 설정파일 php-fpm.conf 파일이 주석처리 해놓은
 /etc/nginx/conf.d 디렉터리(폴더)에 위치하게 됨
 => 주석처리로 인해 php-fpm.conf 파일을 접근할 수 없음!!
 => 따라서 새롭게 include 한 /etc/nginx/sites-avaiable 디렉터리로 복사
 
 16. php-fpm 실행
+```
 sudo systemctl start php-fpm
+```
 
 17. php-fpm 자동 실행 설정
+```
 sudo systemctl enable php-fpm
+```
 
 18. nginx와 php의 연동을 위해 설정파일 수정
+```
 sudo vi /etc/nginx/sites-available/virtual.conf
-===================================
+```
+---
+```
 server {
     listen 80;
     server_name web.itwillbs.com;
@@ -188,25 +227,32 @@ server {
         fastcgi_cache_valid any 30m;
     }
 }
-==============================
+```
+---
 ※ location / {} 부분 삭제, location ~ \.php$ {} 추가
 esc -> :wq
 
 19. 도큐먼트 루트에 php 파일 생성
+```
 sudo vi /var/www/virtual/info.php
-==========================
+```
+---
+```
 <?php
     phpinfo();
 ?>
-==========================
+```
+---
 esc -> :wq
 
 20. nginx 재실행
+```
 sudo systemctl restart nginx
+```
 
 21. 윈도우 웹 브라우저 주소창에 AWS EC2 IP주소/info.php 입력해서 확인
 
-================================================
+---
 
 ## RDS(MySQL)을 연동하여 wordpress 설치
 22. RDS를 MySQL로 구현할 예정이므로 mysql 클라이언트 설치
