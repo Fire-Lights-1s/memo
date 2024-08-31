@@ -1,4 +1,4 @@
-# AWS EC2(nginx) - RDS(MySQL) 연동 워드프레스 구현 
+## AWS EC2(nginx) 구성하기
 1. EC2 대시보드 -> 인스턴스 -> 인스턴스 -> 인스턴스 시작
 - 이름 : nginx
 - AMI : Amazon Linux 2
@@ -256,22 +256,32 @@ sudo systemctl restart nginx
 
 ## RDS(MySQL)을 연동하여 wordpress 설치
 22. RDS를 MySQL로 구현할 예정이므로 mysql 클라이언트 설치
+```
 sudo yum install -y mysql
+```
 
 23. 도큐먼트루트로 이동
+```
 cd /var/www/virtual
+```
 
 24. wordpress 설치
+```
 sudo wget https://wordpress.org/latest.tar.gz
+```
 
 25. 압축 해제
+```
 sudo tar xvfz latest.tar.gz
+```
 
 26. wordpress의 소유자를 nginx로 변경
+```
 sudo chown -R nginx.nginx /var/www/virtual/wordpress
+```
 
 27. rds 대시보르도 이동, rds 데이터베이스 설치
-▪ RDS DB 인스턴스 생성하기
+### RDS DB 인스턴스 생성하기
 1. AWS 로그인
 2. 오른쪽 상단의 리전 확인 (서울 : ap-northeast-2)
 3. 콘솔 홈 왼쪽 검색창에 RDS를 검색
@@ -300,8 +310,10 @@ sudo chown -R nginx.nginx /var/www/virtual/wordpress
 위의 설정이 완료되면 [데이터베이스 생성] 클릭
 
 28. wordpress의 wp-config.php 생성
+```
 cd /var/www/html/wodpress
 sudo cp wp-config-sample.php wp-config.php
+```
 
 29. wp-config.php 수정
 ```
@@ -320,6 +332,8 @@ define( 'DB_HOST', 'itwillbs-rds-class1-team1.cxuw4m6kgp6q.ap-northeast-2.rds.am
 esc -> :wq
 
 30. nginx 웹 서비스 재시작
+```
 sudo systemctl restart nginx
+```
 
 31. 윈도우 웹 브라우저에서 EC2 인스턴스 IP주소/wordpress 를 입력하면 워드프레스의 첫 설치 과정으로 넘어감!
