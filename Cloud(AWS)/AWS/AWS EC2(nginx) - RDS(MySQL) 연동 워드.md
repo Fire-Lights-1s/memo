@@ -1,4 +1,4 @@
-[ AWS EC2(nginx) - RDS(MySQL) 연동 워드프레스 구현 ]
+# AWS EC2(nginx) - RDS(MySQL) 연동 워드프레스 구현 
 1. EC2 대시보드 -> 인스턴스 -> 인스턴스 -> 인스턴스 시작
 - 이름 : nginx
 - AMI : Amazon Linux 2
@@ -15,15 +15,20 @@
 - 여기에 있는 저장소를 기본값으로 찾게 됨
 - AWS가 아닌 일반적인 리눅스 라면 /etc/yum/repo.d/centos-base.repo 파일에 저장된 기본값으로 저장소를 찾음
 
+```
 sudo vi /etc/yum.repos.d/nginx.repo
+```
 => 원하는 버전의 nginx를 설치할 수 있음
-==============================
+
+---
+```
 [nginx]
 name=nginx repo
 baseurl=http://nginx.org/packages/centos/7/$basearch/
 gpgcheck=0
 enabled=1
-=================================
+```
+---
 esc -> :wq
 
 4. nginx 설치
