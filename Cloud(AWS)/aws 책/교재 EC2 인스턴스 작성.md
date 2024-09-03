@@ -258,25 +258,31 @@ p32
 
 이제 위치에 상관없이 passenger-install-nginx-module 명령어를 실행할 수 있음!
 
+```
 passenger-install-nginx-module
+```
 => Phusion Passenger 설치 진행(with nginx)
 
+```
 Press Enter to continue, or Ctrl-C to abort.
+```
 => 메시지화 함께 Enter키를 누르면 설치가 진행
 
 느낌표(!) 입력
-> (*)  Ruby
-   (*)  Python
-   (*)  Node.js
-   ( )  Meteor
+```
+>(*)  Ruby
+ (*)  Python
+ (*)  Node.js
+ ( )  Meteor
+```
 => * 해제 : 스페이스 바 입력
 => Ruby와 Python 항목의 별표를 해제 시킴
  
   ```
  ( )  Ruby
-> ( )  Python
-   (*)  Node.js
-   ( )  Meteor
+>( )  Python
+ (*)  Node.js
+ ( )  Meteor
 ```
 위와 같은 상태(Node.js만 선택된 상태) 라면 엔터키를 누른다.
 
