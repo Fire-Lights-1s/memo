@@ -174,39 +174,57 @@ ls
 ```
 => passenger-6.0.12.tar.gz 보임
 
-``sudo mkdir /var/passenger``
+```
+sudo mkdir /var/passenger
+```
 => /var/passenger 디렉터리(폴더)를 생성
 
+```
 sudo chown ec2-user /var/passenger
+```
 => sudo 명령어를 통해 root 소유자로 지정되어 있는 /var/passenger 디렉터리의 소유자를 ec2-user로 변경
 
+```
 tar xvfz passenger-6.0.12.tar.gz
+```
 => 위의 명령어를 입력하면 현재 위치한 디렉터리(폴더) 아래에 압축해제 됨!
 => 압축 형태가 .gz 이므로 z 옵션을 사용하여 압축 해제
 => 만약, 압축 형태가 .xz 이라면 J(대문자)를 .bz2 이라면 j(소문자)를 옵션으로 사용
 => 압축해제 시 현재 위치한 디렉터리가 아닌 다른 디렉터리에 해제하고 싶을 때 '-C 파일위치'를 사용
 
+```
 tar xvfz passenger-6.0.12.tar.gz -C /var/passenger
+```
 => 압축해제와 묶음파일 풀기를 동시에 진행하여(xvfz) -C 옵션뒤에 설정한 경로(/var/passenger)에 위치시켜라!
 
+```
 ls /var/passenger
+```
 => 압축 해제된 passenger-6.0.12 디렉터리(폴더)가 보임!
 
 p31
 
+```
 asdf plugin add ruby
+```
 => 루비 언어의 플러그인 설치
 
+```
 sudo yum install gcc gcc-c++ glibc glibc-common gd gd-devel openssl-devel libcurl-devel -y
+```
 => 루비 언어를 설치하기 전 필요한 패키지 설치
 
+```
 asdf install ruby 3.1.1
+```
 => 루비 언어 설치
 
+```
 asdf global ruby 3.1.1
+```
 => 버전 3.1.1을 루비 언어의 기본 버전으로 설정
 
-----------------------------------------------------------------------------
+---
 Phusion Passenger 설치
 설치 파일 위치 : /var/passenger/passenger-6.0.12/bin
 
@@ -215,20 +233,26 @@ Phusion Passenger 설치(WAS서버)와 nginx(Web서버)를 동시에 진행하�
 
 현재 위치에 상관없이 passenger-install-nginx-module 설치 파일을 실행할 수 있도록 PATH 설정
 
+```
 echo export PATH=/var/passenger/passenger-6.0.12/bin:$PATH >> ~/.bash_profile
+```
 => 기존의 PATH 설정값에 '/var/passenger/passenger-6.0.12/bin' 를 추가하여 다시 PATH 환경변수 설정을 함.
 => 리다이렉션 기호(>>)를 사용하여 bash_profile 내에 추가!
 => bash_profile은 사용자가 접속 시 사용하는 기본 환경 설정 파일
 => 환경 설정 파일은 각각 유저마다 별개
 
+```
 tail -5 ~/.bash_profile
+```
 => tail 명령어는 파일의 내용을 뒤에서 부터 위로 기본 10줄을 보여주는 명령어.
 => '-숫자' 옵션을 통해 조절이 가능
 
+```
 source ~/.bash_profile
+```
 => 새로 변경된 PATH 설정을 적용
 
-================================================================
+---
 
 p32
 
