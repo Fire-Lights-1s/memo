@@ -98,6 +98,7 @@ public class SocketTextHandler extends TextWebSocketHandler {
 // 1. SockJS라이브러리 추가 
 <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
 //2. SockJS를 이용해서 클라리언트용 웹소켓 객체 생성
+// 경로 문제가 생겨서 프로젝트 명을 앞에 추가함
 let testSock = new SockJS("/secondhand4989/chatting");
 
 function sendMessage(name,str){
