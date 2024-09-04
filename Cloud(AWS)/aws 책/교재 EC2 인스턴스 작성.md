@@ -150,11 +150,11 @@ npm install
 => npm : node package manager
 => Node.js 에서 사용하는 의존성 패키지를 쉽게 관리할 수 있게 도와주는 프로그램
 
-=============================================================
+---
 
 p30
 
-웹 서버(nginx)와 웹 애플리케이션 서버(Phusion Passenger) 설치
+## 웹 서버(nginx)와 웹 애플리케이션 서버(Phusion Passenger) 설치
 
 ```
 cd /var/www
@@ -225,7 +225,7 @@ asdf global ruby 3.1.1
 => 버전 3.1.1을 루비 언어의 기본 버전으로 설정
 
 ---
-Phusion Passenger 설치
+### Phusion Passenger 설치
 설치 파일 위치 : /var/passenger/passenger-6.0.12/bin
 
 Phusion Passenger 설치(WAS서버)와 nginx(Web서버)를 동시에 진행하려면 passenger-install-nginx-module 설치 파일 사용
@@ -292,19 +292,25 @@ Press Enter to continue, or Ctrl-C to abort.
 
 Ctrl + C 를 입력해서 설치를 종료
 
+```
 sudo dd if=/dev/zero of=/swap bs=1M count=1024
 sudo mkswap /swap
 sudo swapon /swap
+```
 
 명령어를 차례대로 입력하고 다시 설치 진행
 
-passenger-install-nginx-module -> 엔터 -> ! -> ruby, python 별표 없애기 -> 엔터
+>passenger-install-nginx-module -> 엔터 -> ! -> ruby, python 별표 없애기 -> 엔터
 
+```
 Enter your choice (1 or 2) or press Ctrl-C to abort:
+```
 => 1 또는 2 또는 Ctrl + C 선택하는 메시지
 => 1번을 입력해서 Phusion Passenger(톰캣과 같은 역할) + nginx(아파치와 같은 역할)을 같이 설치를 진행
 
+```
 Please specify a prefix directory [/opt/nginx]:
+```
 => nginx의 기본 설치 경로
 => 엔터키를 눌러서 계속 진행
 
@@ -312,39 +318,55 @@ Please specify a prefix directory [/opt/nginx]:
 => /opt 디렉터리는 root 유저의 소유이므로 /opt 아래에 ec2-user로는 설치를 진행할 수 없음
 => 오류를 해결해야 설치가 완료됨!
 
-=================================
+---
 
+```
 export ASDF_DATA_DIR=/home/ec2-user/.asdf
+```
 => ASDF_DATA_DIR 환경변수를 생성하고 /home/ec2-user/.asdf 경로를 그 값으로 저장
 => export 명령어로 적용
 
+```
 echo $ASDF_DATA_DIR
+```
 => /home/ec2-user/.asdf 가 화면에 출력
 
+```
 export ORIG_PATH="$PATH"
+```
 => 현재 접속한 ec2-user 사용자의 PATH 설정값을 ORIG_PATH 변수에 저장
 => PATH는 사용자마다 따로 적용되며 이후 설치를 root 유저로 진행할 예정
 => 따라서 root 유저로 변경되면 기존에 설정된 PATH 값은 없어짐!
 => 변수로 저장 후 그 변수의 값을 root의 PATH에 추가시킬 예정
 
+```
 sudo -sE
+```
 => ec2-user에서 root 유저로 사용자를 변경
 
+```
 export PATH="$ORIG_PATH"
+```
 => 현재 사용자는 root 이고, root 사용자의 PATH 환경 변수에 ec2-user 사용자의 PATH 설정값을 가지고 있는
      ORIG_PATH를 대입(저장)
 
+```
 asdf global ruby 3.1.1
+```
 => ec2-user의 PATH 값을 현재 접속한 root 유저의 PATH에 대입했으므로 asdf 관련 명령어도 사용할 수 있음
 => root 유저에서는 기본 루비 버전을 설정하지 않았으므로 global 설정을 입력
 
 이제 root 유저로 다시 passenger-install-nginx-module 명령어를 입력
 
+```
 passenger-install-nginx-module -> 엔터 -> ! -> ruby, python 별표 없애기 -> 엔터 -> 1 엔터 -> 엔터
+```
 
 설치가 진행되는데 조금 시간이 걸림!(몇 분!)
 
+```
 Press ENTER to continue.
+```
 => 엔터키를 입력하면 설치가 마무리 된다.
 
 root 유저로 접속이 되어 있어 exit 명령어를 입력해서 로그아웃 시킴
