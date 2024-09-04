@@ -1,4 +1,3 @@
-
 # spring web socket 필요한 코드
 
 ## pom.xml
@@ -95,7 +94,7 @@ public class SocketTextHandler extends TextWebSocketHandler {
 ## javascript 
 ```javascript
 // 웹소켓 테스트
-// 아무 jsp 파일에 링크 싴
+// 아무 jsp 파일에 링크 시키고 그 파일에서 브라우저 콘솔에서 sendMessage로 테스트
 // 1. SockJS라이브러리 추가 
 <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
 //2. SockJS를 이용해서 클라리언트용 웹소켓 객체 생성
