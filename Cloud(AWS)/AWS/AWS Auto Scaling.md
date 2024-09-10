@@ -94,7 +94,7 @@ EC2 인스턴스 -> 인스턴스 선택하면 exerice-group 이라는 이름의 
    원하는 용량을 0, 최소용량 : 0, 최대용량: 0 으로 설정!
 
 ---
-[ Auto Scaling 동작 확인]
+## Auto Scaling 동작 확인
 - cpu의 사용량을 인위적으로 높이는 stress 라는 패키지를 exercise-group 인스턴스에 설치
 - stress 프로그램 동작
 - cpu 사용량이 80% 가 넘어서면 최대 용량 2 설정값에 의해서 exercise-group 인스턴스가 하나 더 생성!
@@ -102,13 +102,19 @@ EC2 인스턴스 -> 인스턴스 선택하면 exerice-group 이라는 이름의 
 원격 접속
 exercise-group 인스턴스의 퍼블릭 IPv4 주소를 설정하여 접속
 
+```
 sudo amazon-linux-extras install epel -y
+```
 => 외부 저장소에서 패키지를 받을 수 있도록 설정
 
+```
 sudo yum install stress -y
+```
 => cpu 사용량을 강제로 높이는 stress 패키지를 설치
 
+```
 stress --cpu 1 --timeout 600
+```
 => cpu 하나를 600초(10분) 동안 100% 만듦
 => 10분을 설정하는 이유는 사용량 지표를 5분에 한 번씩 모니터링 서버로 전송하기 때문
 => Auto Scaling 그룹 생성 시 [세부 모니터링 활성화] 옵션을 활성화시키면 인스턴스가 
