@@ -78,5 +78,6 @@
 | 이벤트 객체.preventDefault()                                                           | 기본 행동 취소           |
 | 이벤트 객체.stopPropagation()                                                          | 버블링 멈추기            |
 | $(선택자).on("이벤트 이름", "선택자", 이벤트 리스너)                                               | 버블링 활용:하나의 이벤트     |
+
 > 출처
 > https://yeees.tistory.com/11
