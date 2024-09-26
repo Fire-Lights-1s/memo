@@ -33,24 +33,44 @@ tank → kick → know → wheel → land → dream → mother → robot → tan
 - 만약 주어진 단어들로 탈락자가 생기지 않는다면, [0, 0]을 return 해주세요.
 
 ```java
+import java.util.HashMap;
 class Solution {
     public int[] solution(int n, String[] words) {
         int[] answer = {0,0};
-        int totalP = n;
+        HashMap<String, String> usedWord = new HashMap<String, String>();
         int currentP = 1;
-        String startS;
-        String lastS;
+        int currentTurn = 1;
+        String startS = null;
+        String lastS = null;
         
         for(int i = 0; i < words.length; i++){
             if(currentP > n){
                 currentP = 1;
+                currentTurn++;
             }
-            
+            if(i != 0){
+                startS = words[i].substring(0,1);
+                if(!startS.equals(lastS) || usedWord.containsKey(words[i])){
+                    answer[0] = currentP;
+                    answer[1] = currentTurn;
+                    
+                    return answer;
+                }
+                
+                lastS = words[i].substring(words[i].length()-1);
+                usedWord.put(words[i], "used");
+                
+            }
+            if(i == 0){
+                lastS = words[i].substring(words[i].length()-1);
+                usedWord.put(words[i], "used");
+            }
             
             currentP++;
         }
         
         return answer;
     }
+    
 }
 ```
