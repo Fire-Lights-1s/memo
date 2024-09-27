@@ -78,6 +78,7 @@ develops Certbot? We'd like to send you email about our work encrypting the web,
 EFF news, campaigns, and ways to support digital freedom.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 (Y)es/(N)o: y
+```
 
 에러 발생!
 해당 경로에 .well-known  과 관련된 파일이 없다는 404 not found 에러가 발생!
@@ -85,9 +86,12 @@ EFF news, campaigns, and ways to support digital freedom.
 에러를 해결하기 위해
 1) 왼쪽의 Sessions -> secure_web 더블클릭 -> 새로운 접속탭을 하나 생성
 2) [첫번째 접속 탭]에서
+```
 sudo certbot certonly --manual --email jskang@itwillbs.co.kr -d s31.itwillbs.com
+```
 
 
+```
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Create a file containing just this data:
 
@@ -103,16 +107,22 @@ Press Enter to Continue
 => create 아래의 내용을 메모장에 복사8m6IX9PYa6Cy78EZShX92JgYQRj8bA03qfPwxXaMT3g.XDHaQWXHyEHu9VAPUUHqHzhwl0ckMiJMU_7yqtH3wEo 
 
 3) [ 두 번째 접속탭 ] 으로 이동
+```
 sudo -sE
 cd /var/www/html
 mkdir -p .well-known/acme-challenge
 ls -a
+```
 => .well-known 디렉터리 확인
+```
 cd .well-known/acme-challenge
 sudo vi 8m6IX9PYa6Cy78EZShX92JgYQRj8bA03qfPwxXaMT3g
+```
 
 'i'를 눌러 INSERT 모드로 변경하고 나머지 모두를 내용으로 붙여넣기
+```
 8m6IX9PYa6Cy78EZShX92JgYQRj8bA03qfPwxXaMT3g.XDHaQWXHyEHu9VAPUUHqHzhwl0ckMiJMU_7yqtH3wEo
+```
 esc -> :wq
 
 웹 브라우저에서 http://s31.itwillbs.com/.well-known/acme-challenge/8m6IX9PYa6Cy78EZShX92JgYQRj8bA03qfPwxXaMT3g
@@ -121,7 +131,8 @@ esc -> :wq
 4) [ 첫번째 접속 탭]으로 다시 이동
 Press Enter to Continue 화면에서 엔터키를 입력!
 
-==============================
+---
+```
 IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at:
    /etc/letsencrypt/live/s31.itwillbs.com/fullchain.pem
@@ -135,6 +146,7 @@ IMPORTANT NOTES:
 
    Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
+```
 => Let's Encrypt에서 인증서 발급됨!
 
 7. Apache에 추가 설정
