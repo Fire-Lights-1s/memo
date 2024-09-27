@@ -56,3 +56,7 @@ select e.EMPLOYEE_ID, e.LAST_NAME, e.SALARY, e.DEPARTMENT_ID, d.DEPARTMENT_NAME,
 - left outer join : 왼쪽 테이블이 기준
 - right outer join : 오른쪽 테이블이 기준
 - 기준 테이블A에  테이블B에서 조인 조건을 만족하지 않으면 NULL값으로 행을 만듬
+#### Cross join 
+- 조인을 하고자 하는 두 테이블의 모든 행을 조인하는 유형 
+- 다수의 행이 생성되므로 의미있는 결과는 아님. 
+- 모든 경우의 수를 만들고자할 때 사용됨.
