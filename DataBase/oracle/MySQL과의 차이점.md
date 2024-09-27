@@ -20,7 +20,11 @@ select last_name || ' is a ' || job_id as "Employee Details"
 from employees;
 ```
 
-## 
+## Join
+oracle에선 outer join에서 left outer join, right outer join 뿐 아니라 full outer join도 있다
+- left outer join
+- right outer join
+- full outer join
 # Where 절
 저장된 데이터의 문자를 비교할 때 대문자 소문자를 구분한다.
 ```sql
