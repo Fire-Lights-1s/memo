@@ -39,6 +39,8 @@ select e.EMPLOYEE_ID, e.LAST_NAME, e.SALARY, e.DEPARTMENT_ID, d.DEPARTMENT_NAME,
 ```
 
 ### 추가 조인 문법
+#### 자연 조인(Natural Join)
+
 #### 내부 조인(inner join)
 - 조인조건을 만족하는 행만 반환하는 조인 유형
 - on절 join(기본조인유형)
