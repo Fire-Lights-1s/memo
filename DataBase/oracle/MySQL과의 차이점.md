@@ -20,6 +20,7 @@ select last_name || ' is a ' || job_id as "Employee Details"
 from employees;
 ```
 
+## 
 # Where 절
 저장된 데이터의 문자를 비교할 때 대문자 소문자를 구분한다.
 ```sql
