@@ -46,7 +46,8 @@ select e.EMPLOYEE_ID, e.LAST_NAME, e.SALARY, e.DEPARTMENT_ID, d.DEPARTMENT_NAME,
 - 조인을 하고자 하는 두 테이블에서 **컬럼명은 동일하나 데이터 타입이 다른 경우** 사용할 수 있는 조인 유형
 - USING절 뒤에 조인에 기준이 되는 컬럼명을 지정함. 
 - USING절 뒤에 작성된 컬럼은 쿼리 구문에서 접두어(테이블명 또는 테이블 alias)를 사용할 수 없음.
-
+#### Non-equi join 
+- 조인 조건에 동등연산자(=)가 아닌 그 외 다른 비교연산자를 사용한 조인 유형
 #### 내부 조인(inner join)
 - 조인조건을 만족하는 행만 반환하는 조인 유형
 - on절 join(기본조인유형)
