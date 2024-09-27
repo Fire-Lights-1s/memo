@@ -201,7 +201,9 @@ sudo vi /etc/httpd/conf.d/ssl.conf
 esc -> :wq
 
 8. 마지막으로 아파치 웹 서비스 재시작
+```
 sudo systemctl restart httpd
+```
 
 9. EC2 보안그룹 -> web -> 인바운드 규칙 추가 -> HTTPS 포트번호 : 443(자동 입력, 변경 불가), 사용자 지정 : anywhere-IPv4 (0.0.0.0/0, 모든 IP 허용)
 
