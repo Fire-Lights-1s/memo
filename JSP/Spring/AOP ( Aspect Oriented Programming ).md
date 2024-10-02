@@ -32,5 +32,7 @@
 		    <scope>runtime</scope>
 		</dependency>
 ```
+## Spring AOP 실습 코드
+![[AOP 실습 코드]]
 
 >출처: [https://engkimbs.tistory.com/entry/스프링AOP](https://engkimbs.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81AOP) [새로비:티스토리]
