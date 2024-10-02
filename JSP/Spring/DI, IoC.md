@@ -9,7 +9,7 @@
 
 객체의 **의존성을 역전시켜 객체 간의 결합도를 줄이고 유연한 코드를 작성**할 수 있게 하여 **가독성 및 코드 중복, 유지 보수를 편하게** 할 수 있게 한다.
 
->DI, IoC 정리
+>출처 : DI, IoC 정리
 >https://velog.io/@gillog/Spring-DIDependency-Injection
 
 

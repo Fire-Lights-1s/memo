@@ -25,4 +25,4 @@ div{
 <div id="box4">박스4</div>
 ```
 >※web 화면
->![[float.png]]
+>![float.png](images/float.png)
