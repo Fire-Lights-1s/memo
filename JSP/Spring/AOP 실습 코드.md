@@ -65,6 +65,12 @@ public class LogAdvice {
 		log.info("str2 = " + str2);
 	}
 	
+	@After(value = "execution(* com.itwillbs.service.SampleService*.*(..))")
+	public void logAfter() {
+		log.info("After ==================");
+	}
+	
+	//@Around에서 예외 처리를 해서 동작하지 않음
 	@AfterThrowing(pointcut = "execution(* com.itwillbs.service.SampleService*.*(..))", throwing = "exception")
 	public void logException(Exception exception) {
 		log.info("Exception....!!!!");
@@ -80,6 +86,7 @@ public class LogAdvice {
 		Object result = null;
 		
 		try {
+			//target code 실행
 			result = pjp.proceed();
 		} catch (Throwable e) {
 			e.printStackTrace();
@@ -126,7 +133,7 @@ public class SampleServiceTests {
 	
 	@Test
 	public void testAddError() throws Exception{
-		
+		log.info(sampleService.doAdd("123", "ABC"));
 	}
 }
 ```
