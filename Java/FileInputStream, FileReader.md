@@ -19,7 +19,7 @@ public class FileInputStream2 {
 		while( (data = fis.read()) != -1) {
 			System.out.write((char)data); //바이너리 데이터
 		}
-		// 아래의 방법은 한번에 
+		// 아래의 방법은 한번에 10 byte 씩 읽어옴
 		int i;
 		byte[] bs = new byte[10];
 		
