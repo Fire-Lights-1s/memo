@@ -57,11 +57,22 @@ Muzi가 나간후 다시 들어올 때, Prodo 라는 닉네임으로 들어올 �
     - 채팅방에서 나간 유저가 닉네임을 변경하는 등 잘못 된 입력은 주어지지 않는다.
 
 ```java
+import java.util.HashMap;
+
 class Solution {
     public String[] solution(String[] record) {
         String[] answer = {};
         String[] splitRecord = {};
-	    String[] userID
+        HashMap<String, String> users = new HashMap<String, String>();
+		
+		for(int i=0; i < record.length; i++){
+			splitRecord = record[i].split("");
+			if(splitRecord[0].eqaul("Enter")){
+				users.put(splitRecord[1], splitRecord[2]);
+			}else if(splitRecord[0].eqaul("Leave")){
+			}else if(splitRecord[0].eqaul("Change")){
+			}
+		}
         return answer;
     }
 }
