@@ -75,6 +75,7 @@ class Solution {
 				users.put(splitRecord[1], splitRecord[2]);
 			}
 		}
+		answer = 
 		for(int i=0; i < record.length; i++){
 			splitRecord = record[i].split(" ");
 			if(splitRecord[0].eqaul("Enter")){
