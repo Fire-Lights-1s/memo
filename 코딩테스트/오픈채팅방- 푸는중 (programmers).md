@@ -66,11 +66,23 @@ class Solution {
         HashMap<String, String> users = new HashMap<String, String>();
 		
 		for(int i=0; i < record.length; i++){
-			splitRecord = record[i].split("");
+			splitRecord = record[i].split(" ");
 			if(splitRecord[0].eqaul("Enter")){
 				users.put(splitRecord[1], splitRecord[2]);
 			}else if(splitRecord[0].eqaul("Leave")){
+				users.remove(splitRecord[1], splitRecord[2]);
 			}else if(splitRecord[0].eqaul("Change")){
+				users.put(splitRecord[1], splitRecord[2]);
+			}
+		}
+		for(int i=0; i < record.length; i++){
+			splitRecord = record[i].split(" ");
+			if(splitRecord[0].eqaul("Enter")){
+				answer
+			}else if(splitRecord[0].eqaul("Leave")){
+				users.remove(splitRecord[1], splitRecord[2]);
+			}else if(splitRecord[0].eqaul("Change")){
+				users.put(splitRecord[1], splitRecord[2]);
 			}
 		}
         return answer;
