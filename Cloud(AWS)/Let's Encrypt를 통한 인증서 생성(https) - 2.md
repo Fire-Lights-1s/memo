@@ -159,6 +159,51 @@ sudo systemctl restart httpd
 
 10. 웹브라우저에서 https://s31.itwillbs.com 으로 확인!!
 
+[ 인증서 삭제 ]
+sudo certbot delete
+
+---
+## nginx의 경우 
+```
+sudo yum install nginx -y
+sudo systemctl start nginx
+
+sudo amazon-linux-extras install epel -y
+
+sudo yum install -y certbot
+
+sudo yum install -y python-certbot-nginx
+
+sudo certbot certonly --nginx -d s31.itwillbs.com
+```
+=> Congratuations! 와 함께 인증서 발급됨
+
+sudo vi /etc/nginx/conf.d/default.conf (새파일 생성)
+===================================
+server {
+    listen 80;
+    listen 443 ssl;
+
+    server_name s31.itwillbs.com;
+
+    ssl_certificate /etc/letsencrypt/live/s31.itwillbs.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/s31.itwillbs.com/privkey.pem;
+
+location / {
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+    }
+
+    location = /50x.html {
+        root /usr/share/nginx/html;
+    }
+}
+===============
+esc -> :wq
+
+sudo nginx -s reload
+=> nginx를 reload
+
 
 
 
