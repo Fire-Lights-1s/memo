@@ -61,6 +61,7 @@ class Solution {
     public String[] solution(String[] record) {
         String[] answer = {};
         String[] splitRecord = {};
+	    String[] userID
         return answer;
     }
 }
