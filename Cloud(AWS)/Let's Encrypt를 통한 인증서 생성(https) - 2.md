@@ -210,6 +210,8 @@ sudo nginx -s reload
 ```
 => nginx를 reload
 
+웹 브라우저에서 https://s31.itwillbs.com
+=> https 접근이 됨!
 
 
 
