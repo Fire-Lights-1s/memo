@@ -68,21 +68,23 @@ class Solution {
         HashMap<String, String> users = new HashMap<String, String>();
 		
 		for(int i=0; i < record.length; i++){
-			splitRecord = record[i].split(" ");
+			splitRecord = record[i].split(" ", 3);
+            String userID = splitRecord[1];
+            
 			if(splitRecord[0].equals("Enter")){
-				users.put(splitRecord[1], splitRecord[2]);
-			}else if(splitRecord[0].equals("Leave")){
-				users.remove(splitRecord[1]);
+				users.put(userID, splitRecord[2]);
 			}else if(splitRecord[0].equals("Change")){
-				users.put(splitRecord[1], splitRecord[2]);
+				users.replace(userID, splitRecord[2]);
 			}
 		}
 		for(int i=0; i < record.length; i++){
-			splitRecord = record[i].split(" ");
+			splitRecord = record[i].split(" ", 3);
+            String userID = splitRecord[1];
+            
 			if(splitRecord[0].equals("Enter")){
-				result.add(users.get(splitRecord[1]) + "님이 들어왔습니다.");
+				result.add(users.get(userID) + "님이 들어왔습니다.");
 			}else if(splitRecord[0].equals("Leave")){
-				result.add(users.get(splitRecord[1]) + "님이 나갔습니다.");
+				result.add(users.get(userID) + "님이 나갔습니다.");
 			}
 		}
 		answer = result.toArray(new String[result.size()]);
@@ -91,3 +93,6 @@ class Solution {
 }
 
 ```
+
+### 막혔던 부분
+Leave 일 때 유저아이디의 값을 
