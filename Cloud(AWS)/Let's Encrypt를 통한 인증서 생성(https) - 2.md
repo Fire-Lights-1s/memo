@@ -1,4 +1,6 @@
 # Lets's Encrypt를 통한 SSL/TLS 인증서 생성
+
+## 아파치의 경우
 1. https://letsencrypt.org
 - 인증 절차가 단순해서 단 한 줄 명령어로 인증서 발급 가능
 - 발급 대시 시간이 없어 바로 발급
