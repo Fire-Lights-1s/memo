@@ -178,8 +178,11 @@ sudo certbot certonly --nginx -d s31.itwillbs.com
 ```
 => Congratuations! 와 함께 인증서 발급됨
 
+```
 sudo vi /etc/nginx/conf.d/default.conf (새파일 생성)
-===================================
+```
+---
+```
 server {
     listen 80;
     listen 443 ssl;
@@ -198,10 +201,13 @@ location / {
         root /usr/share/nginx/html;
     }
 }
-===============
+```
+---
 esc -> :wq
 
+```
 sudo nginx -s reload
+```
 => nginx를 reload
 
 
