@@ -58,6 +58,7 @@ Muzi가 나간후 다시 들어올 때, Prodo 라는 닉네임으로 들어올 �
 
 ```java
 import java.util.HashMap;
+import java.util.ArrayList;
 
 class Solution {
     public String[] solution(String[] record) {
@@ -67,23 +68,23 @@ class Solution {
 		
 		for(int i=0; i < record.length; i++){
 			splitRecord = record[i].split(" ");
-			if(splitRecord[0].eqaul("Enter")){
+			if(splitRecord[0].equals("Enter")){
 				users.put(splitRecord[1], splitRecord[2]);
-			}else if(splitRecord[0].eqaul("Leave")){
-				users.remove(splitRecord[1], splitRecord[2]);
-			}else if(splitRecord[0].eqaul("Change")){
+			}else if(splitRecord[0].equals("Leave")){
+				users.remove(splitRecord[1]);
+			}else if(splitRecord[0].equals("Change")){
 				users.put(splitRecord[1], splitRecord[2]);
 			}
 		}
-		answer = new String[record.length];
 		for(int i=0; i < record.length; i++){
 			splitRecord = record[i].split(" ");
-			if(splitRecord[0].eqaul("Enter")){
-				answer[i] = users.get(splitRecord[1]) + "님이 들어왔습니다.";
-			}else if(splitRecord[0].eqaul("Leave")){
-				answer[i] = users.get(splitRecord[1]) + "님이 나갔습니다.";
+			if(splitRecord[0].equals("Enter")){
+				result.add(users.get(splitRecord[1]) + "님이 들어왔습니다.");
+			}else if(splitRecord[0].equals("Leave")){
+				result.add(users.get(splitRecord[1]) + "님이 나갔습니다.");
 			}
 		}
+		answer = (String[]) result.toArray();
         return answer;
     }
 }
