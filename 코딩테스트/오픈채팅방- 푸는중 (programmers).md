@@ -63,6 +63,7 @@ import java.util.ArrayList;
 class Solution {
     public String[] solution(String[] record) {
         String[] answer = {};
+        ArrayList<String> result = new ArrayList<String>();
         String[] splitRecord = {};
         HashMap<String, String> users = new HashMap<String, String>();
 		
@@ -84,7 +85,7 @@ class Solution {
 				result.add(users.get(splitRecord[1]) + "님이 나갔습니다.");
 			}
 		}
-		answer = (String[]) result.toArray();
+		answer = result.toArray(new String[result.size()]);
         return answer;
     }
 }
