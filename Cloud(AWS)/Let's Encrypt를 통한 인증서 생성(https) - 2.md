@@ -51,6 +51,8 @@ certbot --help
 - 발급이나 갱신을 위해 웹 서버를 중단시킬 필요가 없음
 - 인증서 갱신 시 상황에 맞게 셋팅을 자동으로 업데이트
 
+-d 뒤는 자신의 사이트 도메인 주소(실제 할당 받은 주소여야함)
+
 ```
 sudo mkdir -p /var/www/letsencrypt
 
@@ -105,6 +107,43 @@ sudo vi /etc/httpd/conf/httpd.conf
 ```
 sudo certbot certonly --apache -d s31.itwillbs.com
 ```
+=> Congratualations! 이 보이면 인증서 발급 완료!
+
+인증서 발급이 완료되었으니 인증서 적용을 해야 함
+```
+sudo vi /etc/httpd/conf/httpd.conf
+```
+
+```
+368 </VirtualHost>
+369 <VirtualHost 13.124.97.82:443>
+370     ServerName s31.itwillbs.com
+371     DocumentRoot /var/www/html
+372
+373     SSLEngine on
+374     SSLCertificateFile /etc/letsencrypt/live/s31.itwillbs.com/cert.pem
+375     SSLCertificateKeyFile /etc/letsencrypt/live/s31.itwillbs.com/privkey.pem
+376     SSLCACertificateFile /etc/letsencrypt/live/s31.itwillbs.com/fullchain.pem
+377 </VirtualHost>
+```
+=> 위의 내용을 추가하고 esc -> :wq
+
+웹 브라우저에서 https://EC2 인스턴스 주소 입력하면 경고창이 뜨고 
+고급 -> s31.itwillbs.com (안전하지 않음)(으)로 계속하기 누르면 시작 페이지(index.html)가 표시됨
+
+```
+sudo cp /etc/letsencrypt/live/s31.itwillbs.com/cert.pem /etc/pki/tls/certs/cert.crt
+sudo cp /etc/letsencrypt/live/s31.itwillbs.com/privkey.pem /etc/pki/tls/private/privkey.key
+sudo cp /etc/letsencrypt/live/s31.itwillbs.com/fullchain.pem /etc/pki/tls/certs/
+```
+```
+sudo vi /etc/httpd/conf.d/ssl.conf
+```
+```
+100 SSLCertificateFile /etc/pki/tls/certs/cert.crt
+107 SSLCertificateKeyFile /etc/pki/tls/private/privkey.key
+```
+로 변경(localhost를 지우고 해당 파일명으로 변경)
 
 
 
