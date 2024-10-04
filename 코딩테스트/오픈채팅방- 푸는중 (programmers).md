@@ -75,15 +75,13 @@ class Solution {
 				users.put(splitRecord[1], splitRecord[2]);
 			}
 		}
-		answer = 
+		answer = new String[record.length];
 		for(int i=0; i < record.length; i++){
 			splitRecord = record[i].split(" ");
 			if(splitRecord[0].eqaul("Enter")){
-				answer
+				answer[i] = users.get(splitRecord[1]) + "님이 들어왔습니다.";
 			}else if(splitRecord[0].eqaul("Leave")){
-				users.remove(splitRecord[1], splitRecord[2]);
-			}else if(splitRecord[0].eqaul("Change")){
-				users.put(splitRecord[1], splitRecord[2]);
+				answer[i] = users.get(splitRecord[1]) + "님이 나갔습니다.";
 			}
 		}
         return answer;
