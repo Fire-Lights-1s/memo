@@ -145,10 +145,17 @@ sudo vi /etc/httpd/conf.d/ssl.conf
 ```
 로 변경(localhost를 지우고 해당 파일명으로 변경)
 
+---
+esc -> :wq
 
+8. 마지막으로 아파치 웹 서비스 재시작
+```
+sudo systemctl restart httpd
+```
 
+9. EC2 보안그룹 -> web -> 인바운드 규칙 추가 -> HTTPS 포트번호 : 443(자동 입력, 변경 불가), 사용자 지정 : anywhere-IPv4 (0.0.0.0/0, 모든 IP 허용)
 
-
+10. 웹브라우저에서 https://s31.itwillbs.com 으로 확인!!
 
 
 
