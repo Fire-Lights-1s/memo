@@ -55,3 +55,14 @@ Muzi가 나간후 다시 들어올 때, Prodo 라는 닉네임으로 들어올 �
     - 유저 아이디와 닉네임은 알파벳 대문자, 소문자를 구별한다.
     - 유저 아이디와 닉네임의 길이는 `1` 이상 `10` 이하이다.
     - 채팅방에서 나간 유저가 닉네임을 변경하는 등 잘못 된 입력은 주어지지 않는다.
+
+```java
+class Solution {
+    public String[] solution(String[] record) {
+        String[] answer = {};
+        String[] splitRecord = {};
+        return answer;
+    }
+}
+
+```
