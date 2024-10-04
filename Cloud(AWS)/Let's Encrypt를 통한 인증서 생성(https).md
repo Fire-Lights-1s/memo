@@ -58,6 +58,7 @@ sudo mkdir -p /var/www/letsencrypt/.well-known/acme-challenge
 ```
 => -p 옵션은 중간부분의 디렉터리가 없으면 생성하면서 최종적으로 acme-challenge 디렉터리를 생성
 -d 뒤는 자신의 사이트 도메인 주소(실제 할당 받은 주소여야함)
+-m 뒤는 인증에 사용할 이메일 주소
 ```
 sudo certbot certonly --webroot --webroot-path=/var/www/letsencrypt -d s31.itwillbs.com -m jskang@itwillbs.co.kr
 ```
