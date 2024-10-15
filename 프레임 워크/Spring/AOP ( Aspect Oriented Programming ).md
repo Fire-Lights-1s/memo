@@ -6,7 +6,7 @@
 
 **AOP**에서 각 관점을 기준으로 로직을 모듈화한다는 것은 코드들을 부분적으로 나누어서 모듈화하겠다는 의미다. 이때, 소스 코드상에서 다른 부분에 계속 반복해서 쓰는 코드들을 발견할 수 있는 데 이것을 **흩어진 관심사 (Crosscutting Concerns)**라 부른다. 
 
-![aop.png](images/aop.png)
+![aop.png](aop.png)
 
 ## AOP 주요 개념
 - Aspect : 위에서 설명한 흩어진 관심사를 모듈화 한 것. 주로 부가기능을 모듈화함.
@@ -33,7 +33,7 @@
 		</dependency>
 ```
 ## Spring AOP 실습 코드
-[aop실습 코드](<./AOP 실습 코드.md>)
+[aop실습 코드](AOP%20실습%20코드.md 실습 코드.md>)
 
 
 >출처: [https://engkimbs.tistory.com/entry/스프링AOP](https://engkimbs.tistory.com/entry/%EC%8A%A4%ED%94%84%EB%A7%81AOP) [새로비:티스토리]
