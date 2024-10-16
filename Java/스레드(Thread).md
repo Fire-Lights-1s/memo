@@ -6,3 +6,60 @@
 - 프로그램은 기억장치(SSD)에 존재하며 실행되기를 기다리는 명령어와 정적인 데이터 묶음
 - 운영체제로부터 자원을 할당받는 작업 단위이다.
 
+```java
+class One extends Thread{
+	@Override
+	public void run() {
+		for(int i=0; i < 300; i++) {
+			System.out.print("*");
+		}
+		System.out.println("One 스레드 종료");
+	}
+}
+
+class Two implements Runnable{
+	@Override
+	public void run() {
+		for(int i=0; i < 300; i++) {
+			System.out.print("$");
+		}
+		System.out.println("Two 스레드 종료");
+	}
+}
+
+public class Thread2 {
+	public static void main(String[] args) {
+	Runnable runnable1 = new MyThread("+");
+	Runnable runnable2 = new MyThread("-");
+	
+	for(int i=0; i < 300; i++) {
+	Thread thread1 = new Thread(runnable1);
+	thread1.start();
+	Thread thread2 = new Thread(runnable2);
+	thread2.start();
+	}
+	
+	System.out.println("종료");
+	
+	One threadOne = new One();
+	threadOne.start();
+	
+	Thread threadTwo = new Thread(new Two());
+	threadTwo.start();
+	
+	}
+	  
+	
+	static class MyThread implements Runnable {
+		private String string;
+		public MyThread(String s) {
+			this.string = s;
+		}
+		
+		@Override
+		public void run() {
+			System.out.print(string);
+		}
+	}
+}
+```
