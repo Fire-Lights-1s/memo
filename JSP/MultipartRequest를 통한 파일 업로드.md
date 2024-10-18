@@ -30,6 +30,6 @@ MultipartRequest multi = new MultipartRequest(request,realFolder,5*1024*1024,"UT
 //MultipartRequest(request,저장 주소,파일 크기제한,인코딩, 중복이름 정책)
 //fileForm이라는 form에서 전달한 업로드 파일을 request 형식으로 받은 후, 실제 주소인 realFolder 안에 넣어주는 작업
 ```
->  [javax패키지 명이 jakarta로 변경됨](<Java EE에서 Jakarta EE로의 전환>) 
+>  [javax패키지 명이 jakarta로 변경됨](<Java EE에서 Jakarta EE로의 전환.md>) 
 > 2024-06-27일 기준 cos.jar 파일은 javax에 의존하고 있음
 > tomcat 10버전의 servlet API 는 jakarta 를 사용해서 cos.jar 을 사용 불가

@@ -26,4 +26,4 @@ div{
 ```
 >※web 화면
 >
->![float.png](images/float.png)
+>![float.png](float.png)
