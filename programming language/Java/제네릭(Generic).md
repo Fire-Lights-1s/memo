@@ -35,4 +35,6 @@ HashMap<String, String> map3 = new HashMap<>();
 | \<N>      | 숫자(Number)              |
 | <S, U, V> | 2번째, 3번째, 4번째에 선언된 타입   |
 
->출처: [https://inpa.tistory.com/entry/JAVA-☕-제네릭Generics-개념-문법-정복하기#제네릭_generics_이란](https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EC%A0%9C%EB%84%A4%EB%A6%ADGenerics-%EA%B0%9C%EB%85%90-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0#%EC%A0%9C%EB%84%A4%EB%A6%AD_generics_%EC%9D%B4%EB%9E%80) [Inpa Dev 👨‍💻:티스토리]
+>출처
+>[https://inpa.tistory.com/entry/JAVA-☕-제네릭Generics-개념-문법-정복하기#제네릭_generics_이란](https://inpa.tistory.com/entry/JAVA-%E2%98%95-%EC%A0%9C%EB%84%A4%EB%A6%ADGenerics-%EA%B0%9C%EB%85%90-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%B3%B5%ED%95%98%EA%B8%B0#%EC%A0%9C%EB%84%A4%EB%A6%AD_generics_%EC%9D%B4%EB%9E%80) [Inpa Dev 👨‍💻:티스토리]
+>https://velog.io/@cv_/%EC%9E%90%EB%B0%94%EC%9D%98-%EC%A0%9C%EB%84%A4%EB%A6%ADGeneric-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0
