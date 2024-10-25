@@ -46,3 +46,60 @@
 - post_build : 빌드의 성공 또는 실패에 따라 명령 실행
 3. atifacts : S3에 아티팩트 생성 및 저장
 
+---
+## AWS CodeBuild 실습 
+1. Visual Studio Code 설치
+https://code.visualstudio.com/ 접속
+Download for Windows 를 클릭해서 다운로드 받고 설치 
+
+2. AWS CLI 설치
+https://aws.amazon.com/cli/   접속
+화면 오른쪽의 Windows '64비트' 클릭
+=> AWSCLIV2.msi 파일 다운로드 및 설치
+
+3. github 접속
+
+4. 새 리포지토리를 생성
+NEW -> Repository name : codebuild-sample -> create repository
+
+5. 화면이 전환되면
+Quick setup 아래에서 'creating a new file' 클릭 -> README.md 파일명을 입력하고 적당한 내용을 입력한다. 그리고 오른쪽 상단의 Commit changes 버튼 클릭.
+
+6. Commit changes 창이 뜨고, Commit message : Create README.md, Extended description 부분은 비워두고 commit changes 버튼 클릭
+
+7. 생성된 리포지토리 페이지에서 제공되는 HTTPS URL 주소를 복사
+예) https://github.com/jinsim2/codebuild-sample.git
+
+8. Visual Studio Code로 이동 -> 상단의 Terminal 탭을 클릭 -> New terminal을 클릭해서 터미널창 열기.
+cd d:
+git clone https://github.com/jinsim2/codebuild-sample.git
+
+9. 프로젝트 디렉터리 이동
+cd codebuild-sample
+
+10. 샘플 프로젝트를 만들기 위해 nodejs 사이트로 이동
+https://nodejs.org/en/ 접속 -> Download -> Prebuilt Installer -> Download Node.js v20.18.0
+=> node-v20.18.0-x64.msi 다운로드 됨
+=> 설치 경로  C:\Program Files\nodejs\
+Tools for Native Modules 단계에서 □Automatically install... 체크 후 Next, Install
+
+11. 설치 후 VS Code 터미널에서 
+node -v
+npm -v
+명령어로 설치 확인 및 버전 확인.
+
+12. Vue.js 설치
+npm install vue
+=> node_modules 폴더와 package-lock.json, package.json 파일 생성
+
+13. vue cli 설치
+npm install -g @vue/cli
+
+14. 설치가 완료되면 vue 명령어를 입력
+※ 만약, vue를 입력 시 오류가 발생하면 Window PowerShell 실행 정책 때문.
+
+14-2. 검색창에서 Windows PowerShell 검색 우클릭, 관리자 권한으로 실행 -> Get-ExecutionPolicy 명령어를 통해 현재 실행 정책을 확인 -> Restricted 설정을 RemoteSigned 설정으로 변경해야 함.
+set-executionpolicy remotesigned -> 'y' 를 입력하여 변경
+
+변경 사항을 적용하기 위해 VS Code를 완전히 닫았다가 다시 실행
+터미널을 열고 'vue' 명령어 입력
