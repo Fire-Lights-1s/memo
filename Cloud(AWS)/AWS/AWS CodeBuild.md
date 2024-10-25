@@ -157,3 +157,64 @@ git push
 }
 ```
 -------------------------------------------------
+위의 내용 중 arn:aws:s3:::codebuild-sample-test/*의 test 부분만 변경하고 오른쪽 하단의 '변경 사항 저장' 클릭
+
+22. 검색창 -> codebuild 검색 -> 즐겨찾기 -> 우클릭 새탭에서 열기
+
+23. 새탭에서 페이지가 열리면 오른쪽의 '프로젝트 생성' 버튼 클릭
+
+>프로젝트 구성
+- 프로젝트 이름 : codebuild-sample-s3
+
+>소스
+- 소스 공급자 : GitHub
+- 자격 증명
+  기본 소스 자격 증명 관리 -> '새 GitHub 연결 만들기' 클릭 -> 연결 이름 : conn_git -> 새 앱 설치 클릭 -> Install & Authorize 클릭 -> git 비번 입력 -> 연결 클릭 ->  돋보기 모양 아이콘이 있는 입력박스 클릭 -> conn_git 선택 -> 저장
+=> AWS 관리형 GitHub 앱을 사용해 연결됨 항목이 보임
+- 리포지토리 : 내 GitHub 계정의 리포지토리를 지정
+예) https://github.com/jinsim2/codebuild-sample
+
+>환경
+- 환경 이미지 : 관리형 이미지
+- 운영체제 : Amazon Linux
+- 런타임 : Standard
+- 이미지 : aws/codebuild/amazonlinux2-x86_64-standard:5.0
+- 이미지 버전 : 이 런타임 버전에 항상 최신 이미지 사용
+- 서비스 역할 : 새 서비스 역할
+- 역할 이름 : codebuild-codebuild-sample-s3-service-role
+
+>Buildspec
+- 빌드 사양 : buildspec 파일 사용
+
+나머지는 기본값으로 두고 [빌드 프로젝트 생성] 버튼 클릭
+
+24. 프로젝트를 사용하는 역할인 codebuild-sample-s3-serivce-role 에 s3에 접근하기 위한 권한을 설정
+검색창에서 IAM 검색 -> 이동 -> 역할 -> codebuild-sample-s3-service-role 클릭
+권한정책 항목 오른쪽끝의 '권한추가▼' 클릭 -> 정책 연결 -> 검색창에 's3' 검색 -> AmazonS3FullAccess 항목에 체크 -> 권한 추가 버튼 클릭
+
+25. 빌드 시 사용할 buildspec.yml 파일을 생성하기 위해서 VS Code로 이동
+
+26. 왼쪽 항목에서 첫번째 아이콘(EXPLORER)을 클릭 -> Open Folder -> D:\codebuild-sample 폴더 클릭 -> '폴더 선택' 버튼 클릭
+
+27. New file -> buildspec.yml
+---
+```
+version: 0.2
+phases: 
+    install:
+        runtime-versions:
+            nodejs: 20
+        commands:
+            - npm i npm@latest -g
+    pre_build:
+        commands:
+            - npm install
+    build:
+        commands:
+            - npm run build
+    post_build:
+        commands:
+            - aws s3 sync ./dist s3://codebuild-sample-test
+```
+---
+=> s3 이름 변경하고, Ctrl + S 를 입력해서 저장
