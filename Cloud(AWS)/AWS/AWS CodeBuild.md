@@ -98,8 +98,62 @@ npm install -g @vue/cli
 14. 설치가 완료되면 vue 명령어를 입력
 ※ 만약, vue를 입력 시 오류가 발생하면 Window PowerShell 실행 정책 때문.
 
-14-2. 검색창에서 Windows PowerShell 검색 우클릭, 관리자 권한으로 실행 -> Get-ExecutionPolicy 명령어를 통해 현재 실행 정책을 확인 -> Restricted 설정을 RemoteSigned 설정으로 변경해야 함.
-set-executionpolicy remotesigned -> 'y' 를 입력하여 변경
+> 검색창에서 Windows PowerShell 검색 우클릭, 관리자 권한으로 실행 
+> -> Get-ExecutionPolicy 명령어를 통해 현재 실행 정책을 확인 
+> -> Restricted 설정을 RemoteSigned 설정으로 변경해야 함.
+`set-executionpolicy remotesigned `
+-> 'y' 를 입력하여 변경
 
 변경 사항을 적용하기 위해 VS Code를 완전히 닫았다가 다시 실행
 터미널을 열고 'vue' 명령어 입력
+
+15. Vue.js create 명령어를 활용하여 Sample 프로젝트를 생성
+vue create .
+Generate project in current directory? (Y/n) y
+> Default ([Vue 3] babel, eslint) (엔터)
+
+16. npm run serve 터미널 실행
+웹 브라우저에서 localhost:8080 을 주소창에 입력하면 화면이 보임!
+서버 중지는 Ctrl + C -> y, 확인이 되었으면 서버 중지
+
+17. Vue 샘플 프로젝트를 확인했다면 Github에 push
+git add .
+git commit -m "CodeBuild Sample Source Commit"
+git push
+
+18. github로 페이지로 돌아가서 새로고침(F5)을 하고 push 된 내용 확인
+
+19. AWS 페이지로 돌아가서 검색창에 S3 검색 -> 즐겨찾기 추가 -> 대시보드로 이동
+버킷만들기
+- 버킷 이름 : codebuild-sample-test
+- □ '모든 퍼블릭 액세스 차단' 체크 해제
+  □ 현재 설정으로 ... 알고 있습니다 항목 체크
+[버킷 만들기] 클릭
+
+20. 만들어진 버킷을 클릭 -> 속성탭 클릭 -> 스크롤을 밑으로 내려 '정적 웹 사이트 호스팅' [편집] 클릭
+- 정적 웹 사이트 호스팅 : 활성화 변경
+- 인덱스 문서 : index.html
+[변경 사항 저장] 클릭
+
+21. 권한탭 -> 버킷 정책 [편집] 클릭
+-------------------------------------
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"    
+            ],
+            "Resource": [
+                "arn:aws:s3:::codebuild-sample-test/*"    
+            ]
+        }    
+        
+    ]
+}
+```
+-------------------------------------------------
