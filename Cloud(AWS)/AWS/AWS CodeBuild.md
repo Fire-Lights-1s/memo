@@ -218,3 +218,42 @@ phases:
 ```
 ---
 => s3 이름 변경하고, Ctrl + S 를 입력해서 저장
+
+28. 새로 생성된 buildspec.yml 파일을 github에 push
+Ctrl + Shift + ` 를 입력해서 터미널 창을 열기
+```
+git add .
+git commit -m "Codebuild-Sample buildspec Commit"
+git push
+```
+
+29. CodeBuild 페이지로 이동 -> codebuild-sample-s3 -> 빌드 시작
+=> 빌드 로그를 통해서 빌드 상황을 볼 수 있고, 에러가 발생하면 로그를 통해 해결
+
+30. 빌드 상태 : 성공함으로 되었다면 S3 버킷으로 이동 후 빌드 결과가 정상적으로 배포됨을 확인
+
+31. 버킷 속성 -> 정적 웹 사이트 호스팅에서 S3 앤드포인트를 복사
+예) http://codebuild-sample-test.s3-website.ap-northeast-2.amazonaws.com
+
+32. VS Code로 이동하여 왼쪽 폴더에서 `/codebuild-sample/src/components/HelloWorld.vue` 를 찾고 클릭 -> `<div> 태그 아래에 <h1>My Second Deploy</h1>` 내용을 추가하고 저장(Ctrl + S)
+
+33. github에 다시 push
+```
+git add .
+git commit -m "Main Page Modify"
+git push
+```
+
+34. CodeBuild로 이동해서 [빌드 재시도]
+
+35. 빌드가 끝나면 웹 브라우저로 이동해서 새로고침(F5)을 입력하여 변경된 내용이 적용되었지 확인!
+
+---
+실습이 끝나고 모든 자원들을 삭제
+1) 개발자 도구 > CodeBuild > 빌드 프로젝트 > ◉ codebuild-sample-s3 선택 → 작업 → 삭제 
+2) github → 리포지토리 삭제
+3) Amazon S3 > 버킷 > ◉ codebuild-sample-test 선택 → 삭제
+※ 버킷 삭제 시 내용이 비어 있어야 한다!
+4) D:\codebuild-sample 폴더 삭제
+5) IAM > 역할 > codebuild-sample-s3-service-role 선택 → 삭제
+
