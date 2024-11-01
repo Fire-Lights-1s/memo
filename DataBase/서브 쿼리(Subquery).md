@@ -39,3 +39,11 @@ WHERE (department_id, salary) IN (SELECT department_id, min(salary)
 								  GROUP BY department_id) 
 ORDER BY department_id;
 ```
+
+#### 단일 컬럼 서브쿼리
+- 서브쿼리로부터 메인쿼리로 단일 컬럼이 반환되는 유형
+- 메인쿼리에서 비쌍 비교를 함.
+
+#### 다중 컬럼 서브쿼리
+- 서브쿼리로부터 메인쿼리로 다중 컬럼이 반환되는 유형
+- 메인쿼리에서 쌍 비교를 함.
