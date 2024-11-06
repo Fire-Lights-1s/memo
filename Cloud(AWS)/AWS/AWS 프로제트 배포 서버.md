@@ -137,3 +137,12 @@ sudo systemctl status tomcat10
 10. 설치 확인
 Tomcat 웹 페이지 접속 확인
 http://EC2-퍼블릭-IP:8080
+
+>서버 업로드 경로
+>톰캣 server.xml 내용 추가
+
+```xml
+<Context docBase="team" path="/" reloadable="true" source="org.eclipse.jst.j2ee.server:team"/>
+```
+
+
