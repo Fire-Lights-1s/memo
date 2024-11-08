@@ -71,11 +71,15 @@ Quick setup 아래에서 'creating a new file' 클릭 -> README.md 파일명을 
 예) https://github.com/jinsim2/codebuild-sample.git
 
 8. Visual Studio Code로 이동 -> 상단의 Terminal 탭을 클릭 -> New terminal을 클릭해서 터미널창 열기.
+```
 cd d:
 git clone https://github.com/jinsim2/codebuild-sample.git
+```
 
 9. 프로젝트 디렉터리 이동
+```
 cd codebuild-sample
+```
 
 10. 샘플 프로젝트를 만들기 위해 nodejs 사이트로 이동
 https://nodejs.org/en/ 접속 -> Download -> Prebuilt Installer -> Download Node.js v20.18.0
@@ -84,16 +88,22 @@ https://nodejs.org/en/ 접속 -> Download -> Prebuilt Installer -> Download Node
 Tools for Native Modules 단계에서 □Automatically install... 체크 후 Next, Install
 
 11. 설치 후 VS Code 터미널에서 
+```
 node -v
 npm -v
+```
 명령어로 설치 확인 및 버전 확인.
 
 12. Vue.js 설치
+```
 npm install vue
+```
 => node_modules 폴더와 package-lock.json, package.json 파일 생성
 
 13. vue cli 설치
+```
 npm install -g @vue/cli
+```
 
 14. 설치가 완료되면 vue 명령어를 입력
 ※ 만약, vue를 입력 시 오류가 발생하면 Window PowerShell 실행 정책 때문.
@@ -108,18 +118,22 @@ npm install -g @vue/cli
 터미널을 열고 'vue' 명령어 입력
 
 15. Vue.js create 명령어를 활용하여 Sample 프로젝트를 생성
+```
 vue create .
 Generate project in current directory? (Y/n) y
 > Default ([Vue 3] babel, eslint) (엔터)
+```
 
 16. npm run serve 터미널 실행
 웹 브라우저에서 localhost:8080 을 주소창에 입력하면 화면이 보임!
 서버 중지는 Ctrl + C -> y, 확인이 되었으면 서버 중지
 
 17. Vue 샘플 프로젝트를 확인했다면 Github에 push
+```
 git add .
 git commit -m "CodeBuild Sample Source Commit"
 git push
+```
 
 18. github로 페이지로 돌아가서 새로고침(F5)을 하고 push 된 내용 확인
 
