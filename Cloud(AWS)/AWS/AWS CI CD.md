@@ -86,7 +86,7 @@ tasks.named('test') {
 // bootWar 태스크를 통해 WAR 파일을 구성할 수 있다. WAR 파일 이름을 설정한다.
 bootWar {
 	archiveBaseName = 'myapp'
-	archiveVerson = '0.1.0'
+	archiveVersion = '0.1.0'
 }
 ```
 ---
