@@ -12,6 +12,7 @@
 폴더 내에 만들어진 스프링부트 프로젝트 내용을 복사.
 메모장으로 README.md 파일을 하나 생성하고 적당한 내용을 입력.
 git bash 를 통해 초기화를 진행.
+```
 git init
 git add .
 git commit -m "first commit"
@@ -20,6 +21,7 @@ git config --global user.email "이메일주소"
 git config --global user.name "github 아이디"
 git remote add origin https://github.com/jinsim2/CodePipeline-sample-springboot.git
 git push -u origin main
+```
 
 3. AWS CodeBuild 페이지로 이동
 프로젝트 생성 클릭
@@ -35,7 +37,7 @@ git push -u origin main
 
 5.  build.gradle 파일에서 의존성 및 plugin 설정
 bootproject 폴더 내의 build.gradle 파일 열기
-===============================
+---
 ```
 // 플러그인 설정
 // 필수 Gradle 플러그인을 정의한다.
@@ -87,10 +89,10 @@ bootWar {
 	archiveVerson = '0.1.0'
 }
 ```
-==================================
+---
 
 6. AWS CodeBuild가 빌드 시 참고하는 buildspec.yml 만듦
-===================================
+---
 ```
 version: 0.2
 
@@ -122,10 +124,10 @@ artifacts:
     - appspec.yml
     - scripts/*
 ```
-======================
+---
 
 7. codedeploy 가 사용할 appspec.yml 파일을 생성
- ================================================
+---
 ```
 version: 0.0
 os: linux
@@ -142,11 +144,11 @@ hooks:
       timeout: 300
       runas: root
 ```
-==================================================
+---
 
 8. 로컬저장소(bootproject) 폴더 안에 scripts 라는 이름의 새폴더 생성 
 scripts 폴더 내에 start_tomcat.sh, stop_tomcat.sh 새 파일 생성
-===============================
+---
 [ stop_tomcat.sh ]
 ```
 #!/bin/bash
@@ -165,7 +167,7 @@ mv /usr/local/tomcat/webapps/myapp.war /usr/local/tomcat/webapps/ROOT.war
 # Tomcat 재시작 (시스템에 따라 명령어가 다를 수 있음)
 sudo systemctl restart tomcat10
 ```
-======================================
+---
 
 9. git bash 창에서 스크립트 파일에 실행권한(x)을 추가
 ```
