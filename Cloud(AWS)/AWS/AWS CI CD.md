@@ -84,7 +84,7 @@ tasks.named('test') {
 // bootWar 태스크를 통해 WAR 파일을 구성할 수 있다. WAR 파일 이름을 설정한다.
 bootWar {
 	archiveBaseName = 'myapp'
-	archiveVerson = '0.1.0'
+	archiveVersion = '0.1.0'
 }
 ```
 ==================================
@@ -272,9 +272,13 @@ Other build providers 선택 -> AWS CodeBuild -> codepipeline-build-sample
 
 22. 모든 과정(소스, 빌드, 배포)가 성공이 되었다면 EC2 톰캣 서버의 /usr/local/tomcat/webapps에 ROOT, ROOT.war 생성됨.
 
-23. 파이프라인이 제대로 동작해서 빌드와 배포가 잘 되는 것을 확인했다면 main 브랜치의 변경사항을 push 하면 빌드와 배포가 자동으로 이루어지는지 확인
+> AWS CodeDeploy에서 문제가 발생함
+> [AWS CI CD 구현 중의 문제 해결 과정](<../AWS 문제 해결/AWS CodeDeploy 배포 시 에러.md>)
 
-24. develop 브랜치를 생성, 앞으로 작업은 develop 브랜치에서 함
+
+1. 파이프라인이 제대로 동작해서 빌드와 배포가 잘 되는 것을 확인했다면 main 브랜치의 변경사항을 push 하면 빌드와 배포가 자동으로 이루어지는지 확인
+
+2. develop 브랜치를 생성, 앞으로 작업은 develop 브랜치에서 함
 ```
 git checkout -b develop
 git push --set-upstream origin develop
