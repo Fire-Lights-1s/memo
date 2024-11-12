@@ -1,4 +1,4 @@
-# AWS 프로제트 배포 서버
+# AWS 프로젝트 배포 서버
 - 톰캣 : 10.1.31
 - JDK : 17
 
@@ -138,11 +138,11 @@ sudo systemctl status tomcat10
 Tomcat 웹 페이지 접속 확인
 http://EC2-퍼블릭-IP:8080
 
->서버 업로드 경로
+>서버 업로드 경로 변경
 >톰캣 server.xml 내용 추가
 
 ```xml
-<Context docBase="team" path="/" reloadable="true" source="org.eclipse.jst.j2ee.server:team"/>
+<Context docBase="{프로젝트 폴더 명}" path="/" reloadable="true" source="org.eclipse.jst.j2ee.server:{프로젝트 폴더 명}"/>
 ```
 
 
