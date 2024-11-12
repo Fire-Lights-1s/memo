@@ -1,8 +1,10 @@
-[ AWS 활용한 CI/CD 구현(Tomcat10, JDK17, SpringBoot) ] 
+# AWS 활용한 CI/CD 구현
+- **(Tomcat10, JDK17, SpringBoot)** 
 - GitHub, CodeBuild, CodeDeploy, CodePipeline을 활용한 CI/CD
 - GitHub에 코드를 푸시하면 CodePipeline이 이를 감지하고 CodeBuild를 실행시켜 빌드를 함.
   CodeDeploy가 EC2상의 Agent를 실행시켜 변경된 내용을 배포.
 
+## Spring boot 프로젝트
 1. GitHub에 로그인을 하고 저장소(Repository)를 생성
 - Repository name : CodePipeline-sample-springboot
 - Description : AWS CodePipeline Sample Repository
@@ -37,7 +39,8 @@ git push -u origin main
 
 5.  build.gradle 파일에서 의존성 및 plugin 설정
 bootproject 폴더 내의 build.gradle 파일 열기
----
+>[Spring boot 프로젝트 war 파일 생성 시 참고](<../../프레임 워크/Spring/Spring boot/Spring Boot 프로젝트 WAR 파일 생성>)
+
 ```
 // 플러그인 설정
 // 필수 Gradle 플러그인을 정의한다.
@@ -89,10 +92,36 @@ bootWar {
 	archiveVersion = '0.1.0'
 }
 ```
----
 
-6. AWS CodeBuild가 빌드 시 참고하는 buildspec.yml 만듦
----
+
+6. src\main\java\com\itwillbs 아래의 com.itwillbs 패키지 아래에 {프로젝트 명}Application.java 클래스에 설정 추가
+>처음 프로젝트 생성 시 war 파일 생성하도록 설정하면 SpringBootServletInitializer를 상속 받은 설정 파일이 생성됨
+
+```
+package com.itwillbs;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+public class Application extends SpringBootServletInitializer {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		return builder.sources(Application.class);
+	}
+
+}
+```
+
+
+
+7. AWS CodeBuild가 빌드 시 참고하는 buildspec.yml 만듦
+
 ```
 version: 0.2
 
@@ -124,10 +153,10 @@ artifacts:
     - appspec.yml
     - scripts/*
 ```
----
+
 
 7. codedeploy 가 사용할 appspec.yml 파일을 생성
----
+
 ```
 version: 0.0
 os: linux
@@ -144,7 +173,7 @@ hooks:
       timeout: 300
       runas: root
 ```
----
+
 
 8. 로컬저장소(bootproject) 폴더 안에 scripts 라는 이름의 새폴더 생성 
 scripts 폴더 내에 start_tomcat.sh, stop_tomcat.sh 새 파일 생성
@@ -183,11 +212,14 @@ git push origin main
 ```
 
 11. GitHub 사이트로 이동하여 main 브랜치에 파일이 정상적으로 잘 업로드 되었는지 확인
+---
+## AWS CI CD 구성
 
-12. 이제 EC2 톰캣 서버를 생성
-=> 1101 - [ AWS 프로젝트 톰캣 배포 서버 ] 파일 참고
+### EC2 
+1. EC2 톰캣 서버를 생성
+=> [ AWS 프로젝트 톰캣 배포 서버 ](<AWS 프로젝트 배포 서버>) 파일 참고
 
-13. EC2 톰캣 서버가 CodeDeploy로부터 배포를 받기 위해 EC2 톰캣 서버에 Agent를 설치
+2. EC2 톰캣 서버가 CodeDeploy로부터 배포를 받기 위해 EC2 톰캣 서버에 Agent를 설치
 ```
 sudo yum -y update
 sudo yum install -y ruby
@@ -197,7 +229,8 @@ sudo chmod +x ./install
 sudo ./install auto
 ```
 
-14. CodeDeploy 역할, 정책 설정
+### CodeDeploy & IAM
+1. CodeDeploy 역할, 정책 설정
 IAM 검색 -> 페이지 이동 -> 왼쪽의 '역할' -> 역할 생성
 - 신뢰할 수 있는 엔터티 유형 : AWS 서비스
 - 사용 사례 : CodeDeploy, 사용 사례 선택 : CodeDeploy
@@ -205,7 +238,7 @@ IAM 검색 -> 페이지 이동 -> 왼쪽의 '역할' -> 역할 생성
 - 역할 이름 : CodeDeploy-ServiceRole
 [역할 생성] 버튼 클릭
 
-15. IAM 정책 -> 정책 생성 -> JSON탭 클릭, 정책 편집기에 아래의 내용을 붙여넣기
+2. IAM 정책 -> 정책 생성 -> JSON탭 클릭, 정책 편집기에 아래의 내용을 붙여넣기
 ---
 ```
 {
@@ -227,17 +260,17 @@ IAM 검색 -> 페이지 이동 -> 왼쪽의 '역할' -> 역할 생성
 [다음] 클릭
 정책 이름 : CodeDeployEC2-Permissions 입력 -> [정책 생성]
 
-16. 생성된 정책을 역할로 연결하기 위해 [역할 생성] 버튼 클릭
+3. 생성된 정책을 역할로 연결하기 위해 [역할 생성] 버튼 클릭
 - 신뢰할 수 있는 엔터티 유형 : AWS 서비스
 - 사용 사례 : EC2
 검색창에 codedeploy 입력 후 정책 리스트에서 'CodeDeployEC2-Permissions' 체크 후 [다음] 클릭
 - 역할 이름 : CodeDeploy-Permissions 입력하고 [역할 생성] 버튼 클릭
 
-17. CodeDeploy 페이지로 이동 -> 애플리케이션 생성
+4. CodeDeploy 페이지로 이동 -> 애플리케이션 생성
 
-18. 애플리케이션 이름에 devops-codedeploy-sample 입력하고 컴퓨팅 플랫폼은 EC2/온프레미스 선택, [애플리케이션] 생성 버튼 클릭
+5. 애플리케이션 이름에 devops-codedeploy-sample 입력하고 컴퓨팅 플랫폼은 EC2/온프레미스 선택, [애플리케이션] 생성 버튼 클릭
 
-19. 생성된 devops-codedeploy-sample 클릭 -> '배포그룹 생성' 버튼 클릭
+6. 생성된 devops-codedeploy-sample 클릭 -> '배포그룹 생성' 버튼 클릭
 - 배포 그룹 이름 : devops-codedeploy-sampledg
 - 서비스 역할 : CodeDeploy-ServiceRole
 - 배포 유형 : 현재 위치
@@ -245,11 +278,12 @@ IAM 검색 -> 페이지 이동 -> 왼쪽의 '역할' -> 역할 생성
 - 로드배런싱 : 로드 밸런싱 활성화 체크 해제
 [ 배포 그룹 생성] 버튼 클릭
 
-20. EC2 인스턴스 대시보드로 이동하여 ApacheTomcat 인스턴스에서 우클릭 -> 보안 -> IAM 역할 수정 -> CodeDeploy-Permissions 선택
+7. EC2 인스턴스 대시보드로 이동하여 ApacheTomcat 인스턴스에서 우클릭 -> 보안 -> IAM 역할 수정 -> CodeDeploy-Permissions 선택
 => ApacheTomcat 인스턴스가 S3에 접근해서 파일을 받아오는 권한이 부여됨
 => CodeDeploy-Permissions 역할에는 S3와 관련된 정책이 설정되어 있음.
 
-21. CodePipeline으로 이동 -> 파이프라인 생성 버튼 클릭
+### CodePipeline
+1. CodePipeline으로 이동 -> 파이프라인 생성 버튼 클릭
 Build custom pipeline 선택 [다음] 클릭
 - 파이프라인 이름 : devops-codepipeline-sample
 - 소스 공급자 : GitHub(버전2)
@@ -272,19 +306,19 @@ Other build providers 선택 -> AWS CodeBuild -> codepipeline-build-sample
 
 전체 내용을 검토한 후 [파이프라인 생성] 버튼 클릭
 
-22. 모든 과정(소스, 빌드, 배포)가 성공이 되었다면 EC2 톰캣 서버의 /usr/local/tomcat/webapps에 ROOT, ROOT.war 생성됨.
+2. 모든 과정(소스, 빌드, 배포)가 성공이 되었다면 EC2 톰캣 서버의 /usr/local/tomcat/webapps에 ROOT, ROOT.war 생성됨.
 
-23. 파이프라인이 제대로 동작해서 빌드와 배포가 잘 되는 것을 확인했다면 main 브랜치의 변경사항을 push 하면 빌드와 배포가 자동으로 이루어지는지 확인
+3. 파이프라인이 제대로 동작해서 빌드와 배포가 잘 되는 것을 확인했다면 main 브랜치의 변경사항을 push 하면 빌드와 배포가 자동으로 이루어지는지 확인
 
-24. develop 브랜치를 생성, 앞으로 작업은 develop 브랜치에서 함
+4. develop 브랜치를 생성, 앞으로 작업은 develop 브랜치에서 함
 ```
 git checkout -b develop
 git push --set-upstream origin develop
 ```
 
-25. 수정 한 내용이 push를 하면 develop 브랜치에 저장.
+5. 수정 한 내용이 push를 하면 develop 브랜치에 저장.
 
-26. develop 브랜치를 main 브랜치에 머지(합치기)를 하면 CodePipeline이 감지해서 빌드, 배포를 자동으로 수행.
+6. develop 브랜치를 main 브랜치에 머지(합치기)를 하면 CodePipeline이 감지해서 빌드, 배포를 자동으로 수행.
 
 
 
