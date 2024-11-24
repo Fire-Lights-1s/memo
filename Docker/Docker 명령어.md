@@ -25,6 +25,6 @@ docker rm 컨테이너명/ID
 ```
 실행 중인 컨테이너 삭제
 ```
-docker rm -f
+docker rm -f (컨테이너명1 컨테이너명2 ...)
 ```
 
