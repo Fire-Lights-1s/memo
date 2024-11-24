@@ -2,10 +2,20 @@
 ```
 docker run (실행 옵션) 이미지명
 ```
+
 `-d` : 백그라운드 실행
 `--name {컨테이너명}` : 컨테이너의 이름 지정
 ```
 docker run -d --name {컨테이너명} 이미지명
+```
+
+컨테이너 실행 시 메타데이터의 cmd 덮어쓰기
+```
+docker run 이미지명 (실행명령)
+```
+컨테이너 실행 시 메타데이터의 env 덮어쓰기
+```
+docker run --env KEY=VALUE 이미지명
 ```
 
 ## 조회
@@ -20,7 +30,7 @@ docker image inspect 이미지명
 ```
 
 컨테이너의 세부 정보 조회
-```shell
+```
 docker container inspect 컨테이너명
 ```
 
