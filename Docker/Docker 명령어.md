@@ -14,6 +14,16 @@ docker run -d --name {컨테이너명} 이미지명
 docker image ls (이미지명)
 ```
 
+이미지의 세부 정보 조회
+```
+docker image inspect 이미지명
+```
+
+컨테이너의 세부 정보 조회
+```shell
+docker container inspect 컨테이너명
+```
+
 실행 중인 컨테이너 리스트 조회
 ```
 docker ps
