@@ -39,6 +39,10 @@ docker container inspect 컨테이너명
 docker ps
 ```
 
+실행 중인 컨테이너의 **로그** 조회
+```
+docker logs (컨테이너명)
+```
 ## 삭제
 ```
 docker rm 컨테이너명/ID
