@@ -43,6 +43,11 @@ docker ps
 ```
 docker logs (컨테이너명)
 ```
+
+이미지의 레이어 이력 조회
+```
+docker image history 이미지명
+```
 ## 삭제
 ```
 docker rm 컨테이너명/ID
