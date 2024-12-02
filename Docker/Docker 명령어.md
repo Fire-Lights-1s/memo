@@ -98,6 +98,8 @@ docker logout
 
 # 이미지 빌드
 도커파일을 통해 이미지 빌드
+`-t` : 빌드할 이미지의 이름 지정
+`.` : 현제 위치에서 빌드
 ```
 docker build -t 이미지명 Dockerfile경로
 ```
