@@ -95,3 +95,11 @@ docker login
 ```
 docker logout
 ```
+
+# 이미지 빌드
+도커파일을 통해 이미지 빌드
+```
+docker build -t 이미지명 Dockerfile경로
+```
+
+도커 파일 기본 지시어
