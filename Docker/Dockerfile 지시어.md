@@ -1,4 +1,4 @@
-## 도커 파일 기본 지시어
+## Dockerfile 기본 지시어
 베이스 이미지를 지정
 ```Dockerfile
 FROM 이미지명
@@ -17,4 +17,19 @@ RUN 명령어
 컨테이너 실행 시 명령어 지정
 ```Dockerfile
 CMD ["명령어"]
+```
+
+작업 디렉토리를 지정
+```Dockerfile
+WORKDIR 폴더명
+```
+
+명령을 실행할 사용자 변경
+```Dockerfile
+USER 유저명
+```
+
+컨테이너가 사용할 포트를 명시
+```Dockerfile
+EXPOSE 포트번호
 ```
