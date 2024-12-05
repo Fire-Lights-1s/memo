@@ -14,11 +14,6 @@ COPY 빌드컨텍스트경로 레이어경로
 RUN 명령어
 ```
 
-컨테이너 실행 시 명령어 지정
-```Dockerfile
-CMD ["명령어"]
-```
-
 작업 디렉토리를 지정
 >모든 지시어들은 해당 경로에서 실행하게 된다.
 ```Dockerfile
@@ -38,13 +33,31 @@ EXPOSE 포트번호
 ```
 
 이미지 빌드 시점의 환경 변수 설정
->
+>빌드에만 사용할 환경 변수를 지정
 ```dockerfile
 ARG 변수명 변수값
 ```
 
 이미지 빌드 및 컨테이너 실행 시점의 환경 변수 설정
+>애플리케이션을 실행할 때 참고할 용도로 사용
 ```dockerfile
 ENV 변수명 변수값
 ```
 
+고정된 명령어를 지정
+
+```dockerfile
+ENTRYPOINT ["명령어"]
+```
+>예시
+>```dockerfile
+>ENTRYPOINT ["npm"]
+>CMD ["start"]
+>```
+> `npm start`로 실행된다
+
+
+컨테이너 실행 시 명령어 지정
+```Dockerfile
+CMD ["명령어"]
+```
