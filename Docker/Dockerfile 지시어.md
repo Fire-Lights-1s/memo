@@ -36,3 +36,14 @@ USER 유저명
 ```Dockerfile
 EXPOSE 포트번호
 ```
+
+이미지 빌드 시점의 환경 변수 설정
+```dockerfile
+ARG 변수명 변수값
+```
+
+이미지 빌드 및 컨테이너 실행 시점의 환경 변수 설정
+```dockerfile
+ENV 변수명 변수값
+```
+
