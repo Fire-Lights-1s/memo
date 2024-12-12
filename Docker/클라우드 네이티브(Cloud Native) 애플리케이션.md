@@ -19,3 +19,7 @@
 	애플리케이션 서버는 상태를 가지지 않아야 한다.
 4. DevOps 및CI/CD 
 	배포가자동화되어야하고빠르게릴리즈가수행되어야한다.
+	참고 자료 : [The Twelve-Factor App](https://12factor.net/)
+
+## MSA
+[모놀리식과 MSA](<./images/모놀리식_MSA.png>)
