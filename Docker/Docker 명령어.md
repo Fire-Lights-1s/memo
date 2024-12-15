@@ -106,10 +106,26 @@ docker build -t 이미지명 Dockerfile경로
 
 도커파일명이 Dockerfile이 아닌 경우 별도 지정
 `-f` : Dockerfile 로 사용할 파일 지정
-```docker
+```
 docker build -f 도커파일명 -t 이미지명 Dockerfile경로
 ```
 
 ## [도커 파일 기본 지시어](<./Dockerfile 지시어.md>)
 
-# 
+# 파일 복사
+컨테이너와 호스트 머신 간 파일 복사
+```
+docker cp 원본위치 복사위치
+```
+
+컨테이너 -> 호스트 머신으로 파일 복사
+```
+docker cp 컨테이너명:원본위치 복사위치
+```
+
+호스트 머신 -> 컨테이너로 파일 복사
+```
+docker cp 원본위치 컨테이너명:복사위치
+```
+
+
