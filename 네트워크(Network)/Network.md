@@ -85,6 +85,9 @@ Destination MAC address : 01-00-5E-00-00-02
 
 - Logical address(논리적 주소)라고 부른다
 
+### ARP(Address Resolution Protocol)
+- 일반적으로 IP 주소만을 보기 때문에 IP주소로만 통신을 한다고 생각하지만 IP주소와 MAC주소를 서로 매핑 시켜주는 절차를 거치고 있다
+- IP 주소와 MAC 주소를 서로 매핑하는 절차를 ARP라고 한다
 
 
 
