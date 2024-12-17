@@ -20,4 +20,19 @@
 - full duplex로 동작하는 링크는 Frame의 송신과 수신이 서로 다른 채널을 통해 이루어지기 때문에 충돌이 일어나지 않는다
 - 때문에 충돌 감지도 하지 않는다
 > full duplex 모드에서 Ethernet 동작 방식이 CSMA/CD가 아니다
-- 송수신 
+- 송수신 트래픽 양이 돌일하다면 half duplex 보다 full duplex 속도가 2배 더 빠르다
+
+## 이더넷 Frame 구조
+![이더넷 Frame 구조](<./images/이더넷_Frame_구조.png>)
+1. Preamble
+	- Frame 전송의 시작을 나타내는 필드, 10101010이 반복되는 7byte 길이의 필드
+	- 수신 측에 Frame이 전송된다는 것을 알리고 0과 1을 제대로 구분할 수 있게 Synchronization(동기)신호를 제공하는 역할( 때문에 clock을 사용하지 않는다)
+2. SOF(SFD)
+	- 10101011의 값을 가지며 Frame의 시작을 알리는데 사용
+	>Ethernet Frame 크기를 나타낼 때 Preamble과 SOF를 합친 8 byte는 제외
+3.  목적지 주소
+	- Destination MAC address 즉, 수신지의 MAC address
+4. 출발지 주소
+	- Source MAC address 즉, 출발지의 MAC address
+5. 타입 or 길이
+	- 상위 계층 
