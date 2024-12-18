@@ -35,4 +35,4 @@
 4. 출발지 주소
 	- Source MAC address 즉, 출발지의 MAC address
 5. 타입 or 길이
-	- 상위 계층 
+	- 상위 계층  프로토콜 (Network Layer : IPv4, IPv6, IPX, Appletalk)
