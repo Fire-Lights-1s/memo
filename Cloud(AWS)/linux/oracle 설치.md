@@ -124,8 +124,8 @@ unzip /app/media/LINUX.X64_193000_db_home.zip
 
 >오류
 >oracle 설치 프로그램 실행 시 한글 깨짐
- -> 설치 실행 전에 export LANG=C 과 export LC_ALL=C
+ -> 설치 실행 전에 `export LANG=C` 과 `export LC_ALL=C`
 >
 >설치 프로그램 실행 시 에러 [INS-801010] 발생
- -> 설치 실행 전에 export CV_ASSUME_DISTID=OEL7 입력
+ -> 설치 실행 전에 `export CV_ASSUME_DISTID=OEL7` 입력
  -> oracle 설치 프로그램이 현재 실행 중인 리눅스 배포판이 특정 배포판 ID를 가진다고 가정하게 만듬
