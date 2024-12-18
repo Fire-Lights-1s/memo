@@ -36,3 +36,5 @@
 	- Source MAC address 즉, 출발지의 MAC address
 5. 타입 or 길이
 	- 상위 계층  프로토콜 (Network Layer : IPv4, IPv6, IPX, Appletalk)
+	- 데이터 필드의 길이나 MAC 클라이언트 프로토콜의 종류를 표시
+	- 1500 이하면 데이터 필드의 길이 표시, 1500 이상이면 MAC 클라이언트 프로토콜의 종류, 즉 이더타입 표시
