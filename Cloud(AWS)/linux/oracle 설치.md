@@ -1,5 +1,5 @@
 os : rocky linux 8.10
-
+최소 필요 메모리 : 3GB
 # 오라클 설치 전 사전 설정
 
 **/etc/hosts 설정**
