@@ -115,3 +115,16 @@ DATAFILE '<경로>' SIZE <크기>
 ```
 - contents : 모든 세그먼트를 삭제
 - datafiles : 모든 데이터 파일까지 삭제
+
+
+# 실습
+```sql
+create tablespace test_tablespace
+DATAFILE '/app/oracle/tableSpace/test_tablespace.dbf' 
+SIZE 100M 
+AUTOEXTEND ON NEXT 10M MAXSIZE UNLIMITED;
+```
+
+```sql
+SELECT * FROM dba_tablespaces where upper(tablespace_name)='TEST_TABLESPACE';
+```
