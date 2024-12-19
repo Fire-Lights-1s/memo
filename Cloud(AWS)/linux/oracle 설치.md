@@ -19,6 +19,8 @@ vi /etc/hostname
 ora19 -- 아까 작성한 아이피명 추가
 ```
 
+# 오라클 설치
+
 **preinstall rpm 설치**
 - 필요한 설정을 해줌
 ```shell
@@ -129,3 +131,11 @@ unzip /app/media/LINUX.X64_193000_db_home.zip
 >설치 프로그램 실행 시 에러 [INS-801010] 발생
  -> 설치 실행 전에 `export CV_ASSUME_DISTID=OEL7` 입력
  -> oracle 설치 프로그램이 현재 실행 중인 리눅스 배포판이 특정 배포판 ID를 가진다고 가정하게 만듬
+
+
+### **리스너 설정**
+netca 실행을 위해 `$ORACLE_HOME/bin` 으로 이동
+```shell
+cd $ORACLE_HOME/bin
+netca
+```
