@@ -139,3 +139,19 @@ netca 실행을 위해 `$ORACLE_HOME/bin` 으로 이동
 cd $ORACLE_HOME/bin
 netca
 ```
+
+Listener 구동 확인
+```shell
+lsnrctl status
+```
+
+## Database Configiration Assistant(dbca)
+Database를 생성하기 위해 dbca 실행
+```shell
+dbca
+```
+
+Database 설치 후 확인
+```shell
+ps -ef | grep ora_
+```
