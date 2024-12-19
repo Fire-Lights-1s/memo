@@ -152,6 +152,15 @@ dbca
 ```
 
 Database 설치 후 확인
+- 실행 중인 프로세스 확인
 ```shell
 ps -ef | grep ora_
 ```
+
+## Database 접속
+
+sys 계정으로 로그인
+```shell
+sqlplus "/as sysdba"
+```
+
