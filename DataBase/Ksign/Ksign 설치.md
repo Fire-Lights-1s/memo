@@ -44,3 +44,20 @@ sqlplus '/as sysdba'
 ```sql
 @/[절대경로]/sdb01_java_dbsec.sql
 ```
+
+
+### 이슈
+- KSignSecureDB Agent DB Setup 과정에서 ORA-12154: TNS:could not resolve the connect identifier specified 오류 발생
+
+
+1. 오라클 데이타베이스명을 확인하는 방법  
+  
+```sql
+SELECT NAME, DB_UNIQUE_NAME FROM v$database;  
+```
+  
+2. 오라클 SID를 확인하는 방법  
+  
+```sql
+SELECT instance FROM v$thread;
+```
