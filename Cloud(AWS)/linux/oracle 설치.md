@@ -168,3 +168,4 @@ oracle DB가 실행 중인지 확인
 ```shell
 ps -ef|grep ora
 ```
+
