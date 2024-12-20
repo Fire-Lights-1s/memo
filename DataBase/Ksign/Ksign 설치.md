@@ -1,3 +1,6 @@
+# 환경
+- OS : Rocky Linux 8.10
+- DB : Oracle 19c
 # 설치 전 유의사항
 
 - KSignSecureDB Agent 의 이전 버전 : 없음 (신규설치)
@@ -28,4 +31,16 @@ show parameter JAVA_POOL_SIZE;
 
 ```sql
 alter system set java_pool_size=10m scope=both;
+```
+
+
+# 설치
+Agent/jscript 폴더의 3.3. sdb01_java_dbsec.sql 파일 실행
+sqlplus 접속
+```shell
+sqlplus '/as sysdba'
+```
+
+```sql
+@/[절대경로]/sdb01_java_dbsec.sql
 ```
