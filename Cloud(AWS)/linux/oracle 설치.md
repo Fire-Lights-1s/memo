@@ -164,3 +164,7 @@ sys 계정으로 로그인
 sqlplus "/as sysdba"
 ```
 
+oracle DB가 실행 중인지 확인
+```shell
+ps -ef|grep ora
+```
