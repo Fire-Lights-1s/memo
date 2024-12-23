@@ -81,14 +81,35 @@ sqlplus '/as sysdba'
 - KSignSecureDB Agent DB Setup 과정에서 ORA-12154: TNS:could not resolve the connect identifier specified 오류 발생
 
 
-1. 오라클 데이타베이스명을 확인하는 방법  
+- 오라클 데이타베이스명을 확인하는 방법  
   
 ```sql
 SELECT NAME, DB_UNIQUE_NAME FROM v$database;  
 ```
   
-2. 오라클 SID를 확인하는 방법  
+- 오라클 SID를 확인하는 방법  
   
 ```sql
 SELECT instance FROM v$thread;
+```
+
+- 아래 두개의 파일 KSignSecureDB/Agent/bin/ 경로에 추가
+>SDBFilter.jar
+>SecureDB_Filter.jar
+
+- tnsnames.ora 파일 없어서 생성 후 오류 해결 과정에서 내용수정
+```ora
+# 처음 생성 후 HOST를 ip 주소에서 localhost로 변경
+ORA19C =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ORA19C)
+    )
+  )
+
+# 추가 내용
+LISTENER_ORA19C =
+  (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
 ```
