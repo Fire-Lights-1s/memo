@@ -1,3 +1,4 @@
+
 os : rocky linux 8.10
 최소 필요 메모리 : 3GB
 # 오라클 설치 전 사전 설정
@@ -169,3 +170,5 @@ oracle DB가 실행 중인지 확인
 ps -ef|grep ora
 ```
 
+> 참고 사이트
+> https://positivemh.tistory.com/1144
