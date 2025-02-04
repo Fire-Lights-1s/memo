@@ -218,7 +218,7 @@ git push origin main
 
 ### EC2 
 1. EC2 톰캣 서버를 생성
-=> [ AWS 프로젝트 톰캣 배포 서버 ](<AWS 프로젝트 배포 서버>) 파일 참고
+=> [ AWS 프로젝트 톰캣 배포 서버 ](<AWS 프로젝트 배포 서버.md>) 파일 참고
 
 2. EC2 톰캣 서버가 CodeDeploy로부터 배포를 받기 위해 EC2 톰캣 서버에 Agent를 설치
 ```
@@ -311,7 +311,7 @@ Other build providers 선택 -> AWS CodeBuild -> codepipeline-build-sample
 
 
 > AWS CodeDeploy에서 문제가 발생함
-> [AWS CI CD 구현 중의 문제 해결 과정](<../AWS 문제 해결/AWS CodeDeploy 배포 시 에러.md>)
+> [AWS CI CD 구현 중의 문제 해결 과정](<AWS CodeDeploy 배포 시 에러.md>)
 
 
 1. 파이프라인이 제대로 동작해서 빌드와 배포가 잘 되는 것을 확인했다면 main 브랜치의 변경사항을 push 하면 빌드와 배포가 자동으로 이루어지는지 확인

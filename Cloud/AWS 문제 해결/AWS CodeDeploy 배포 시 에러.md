@@ -1,6 +1,6 @@
 # CodeDeploy 배포 시 에러
 
-[AWS CI CD 구현](<../AWS/AWS CI CD.md>) 을 실습하는 과정에서 
+[AWS CI CD 구현](<AWS CI CD.md>) 을 실습하는 과정에서 
 AWS CodeDeploy에서 문제가 발생함
 
 ## 문제 확인
