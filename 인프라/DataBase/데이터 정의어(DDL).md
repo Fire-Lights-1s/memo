@@ -23,7 +23,7 @@ CREATE TABLE 테이블명
 - 날짜
 	- 년/월/일 : date
 	- 년/월/일/시/분/초 : datetime
-#### [제약 조건](<제약 조건>)
+#### [제약 조건](<제약 조건.md>)
 - 제약 조건 유형 : NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK
 - 제약 조건 목적 : 컬럼에 부적합한 데이터가 삽입/수정/삭제 되는 것을 막기 위함
 - 제약조건 문법 

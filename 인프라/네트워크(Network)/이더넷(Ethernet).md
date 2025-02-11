@@ -23,7 +23,7 @@
 - 송수신 트래픽 양이 돌일하다면 half duplex 보다 full duplex 속도가 2배 더 빠르다
 
 ## 이더넷 Frame 구조
-![이더넷 Frame 구조](<./images/이더넷_Frame_구조.png>)
+![이더넷 Frame 구조](<이더넷_Frame_구조.png>)
 1. Preamble
 	- Frame 전송의 시작을 나타내는 필드, 10101010이 반복되는 7byte 길이의 필드
 	- 수신 측에 Frame이 전송된다는 것을 알리고 0과 1을 제대로 구분할 수 있게 Synchronization(동기)신호를 제공하는 역할( 때문에 clock을 사용하지 않는다)

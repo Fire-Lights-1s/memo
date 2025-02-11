@@ -53,7 +53,7 @@ DATAFILE '<경로>' SIZE <크기>
 ] 
 [SEGMENT SPACE MANAGEMENT [AUTO(기본값) | MANUAL]]
 ```
-[옵션 설명](<./Tablespace 옵션 설명.md>)
+[옵션 설명](<Tablespace 옵션 설명.md>)
 ## Tablespace 조회
 ```sql
     SELECT * FROM dba_data_files;  
